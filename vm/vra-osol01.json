@@ -1,0 +1,1297 @@
+{'dynamicType': None, 'dynamicProperty': (vmodl.DynamicProperty) [], 'changeVersion': '2023-04-04T03:16:20.704144Z', 'modified': datetime.datetime(1970, 1, 1, 0, 0, tzinfo=<pyVmomi.Iso8601.TZInfo object at 0x000002EE14A49410>), 'name': 'vra-osol01', 'guestFullName': 'Other 3.x Linux (64-bit)', 'version': 'vmx-10', 'uuid': '42185dbb-7a4a-24d9-cf8f-2bcc6f7ce84c', 'createDate': datetime.datetime(2019, 10, 26, 1, 0, 23, 204373, tzinfo=<pyVmomi.Iso8601.TZInfo object at 0x000002EE14A49410>), 'instanceUuid': '5018092a-3348-203e-b096-5c258bf05578', 'npivNodeWorldWideName': (long) [], 'npivPortWorldWideName': (long) [], 'npivWorldWideNameType': None, 'npivDesiredNodeWwns': None, 'npivDesiredPortWwns': None, 'npivTemporaryDisabled': True, 'npivOnNonRdmDisks': None, 'locationId': '564d716f-2886-d1b3-8371-6777b9c739fe', 'template': False, 'guestId': 'other3xLinux64Guest', 'alternateGuestName': '', 'annotation': 'vSphere Replication Appliance', 'files': (vim.vm.FileInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   vmPathName = '[OSOL-VM-vSphereReplication01] vra-osol01/vra-osol01.vmx',
+   snapshotDirectory = '[OSOL-VM-vSphereReplication01] vra-osol01/',
+   suspendDirectory = '[OSOL-VM-vSphereReplication01] vra-osol01/',
+   logDirectory = '[OSOL-VM-vSphereReplication01] vra-osol01/',
+   ftMetadataDirectory = <unset>
+}, 'tools': (vim.vm.ToolsConfigInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   toolsVersion = 2147483647,
+   toolsInstallType = <unset>,
+   afterPowerOn = true,
+   afterResume = true,
+   beforeGuestStandby = true,
+   beforeGuestShutdown = true,
+   beforeGuestReboot = <unset>,
+   toolsUpgradePolicy = 'manual',
+   pendingCustomization = <unset>,
+   customizationKeyId = <unset>,
+   syncTimeWithHostAllowed = <unset>,
+   syncTimeWithHost = false,
+   lastInstallInfo = (vim.vm.ToolsConfigInfo.ToolsLastInstallInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      counter = 0,
+      fault = <unset>
+   }
+}, 'flags': (vim.vm.FlagInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   disableAcceleration = false,
+   enableLogging = true,
+   useToe = false,
+   runWithDebugInfo = false,
+   monitorType = 'release',
+   htSharing = 'any',
+   snapshotDisabled = false,
+   snapshotLocked = false,
+   diskUuidEnabled = false,
+   virtualMmuUsage = 'automatic',
+   virtualExecUsage = 'hvAuto',
+   snapshotPowerOffBehavior = 'powerOff',
+   recordReplayEnabled = false,
+   faultToleranceType = 'unset',
+   cbrcCacheEnabled = <unset>,
+   vvtdEnabled = <unset>,
+   vbsEnabled = <unset>
+}, 'consolePreferences': None, 'defaultPowerOps': (vim.vm.DefaultPowerOpInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   powerOffType = 'soft',
+   suspendType = 'hard',
+   resetType = 'soft',
+   defaultPowerOffType = 'soft',
+   defaultSuspendType = 'hard',
+   defaultResetType = 'soft',
+   standbyAction = 'checkpoint'
+}, 'rebootPowerOff': None, 'hardware': (vim.vm.VirtualHardware) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   numCPU = 4,
+   numCoresPerSocket = 1,
+   autoCoresPerSocket = <unset>,
+   memoryMB = 8192,
+   virtualICH7MPresent = false,
+   virtualSMCPresent = false,
+   device = (vim.vm.device.VirtualDevice) [
+      (vim.vm.device.VirtualIDEController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 200,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'IDE 0',
+            summary = 'IDE 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            3000
+         ]
+      },
+      (vim.vm.device.VirtualIDEController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 201,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'IDE 1',
+            summary = 'IDE 1'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 1,
+         device = (int) []
+      },
+      (vim.vm.device.VirtualPS2Controller) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 300,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'PS2 controller 0',
+            summary = 'PS2 controller 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            600,
+            700
+         ]
+      },
+      (vim.vm.device.VirtualPCIController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 100,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'PCI controller 0',
+            summary = 'PCI controller 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            500,
+            12000,
+            1000,
+            4000
+         ]
+      },
+      (vim.vm.device.VirtualSIOController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 400,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'SIO controller 0',
+            summary = 'SIO controller 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) []
+      },
+      (vim.vm.device.VirtualKeyboard) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 600,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Keyboard ',
+            summary = 'Keyboard'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 300,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>
+      },
+      (vim.vm.device.VirtualPointingDevice) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 700,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Pointing device',
+            summary = 'Pointing device; Device'
+         },
+         backing = (vim.vm.device.VirtualPointingDevice.DeviceBackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            deviceName = '',
+            useAutoDetect = false,
+            hostPointingDevice = 'autodetect'
+         },
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 300,
+         unitNumber = 1,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>
+      },
+      (vim.vm.device.VirtualVideoCard) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 500,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Video card ',
+            summary = 'Video card'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 100,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         videoRamSizeInKB = 4096,
+         numDisplays = 1,
+         useAutoDetect = false,
+         enable3DSupport = false,
+         use3dRenderer = 'automatic',
+         graphicsMemorySizeInKB = 262144
+      },
+      (vim.vm.device.VirtualVMCIDevice) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 12000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'VMCI device',
+            summary = 'Device on the virtual machine PCI bus that provides support for the virtual machine communication interface'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 32
+         },
+         controllerKey = 100,
+         unitNumber = 17,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         id = 1870456908,
+         allowUnrestrictedCommunication = false,
+         filterEnable = false,
+         filterInfo = <unset>
+      },
+      (vim.vm.device.VirtualLsiLogicController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 1000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'SCSI controller 0',
+            summary = 'LSI Logic'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 16
+         },
+         controllerKey = 100,
+         unitNumber = 3,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            2000,
+            2001
+         ],
+         hotAddRemove = true,
+         sharedBus = 'noSharing',
+         scsiCtlrUnitNumber = 7
+      },
+      (vim.vm.device.VirtualCdrom) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 3000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'CD/DVD drive 1',
+            summary = 'ATAPI'
+         },
+         backing = (vim.vm.device.VirtualCdrom.AtapiBackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            deviceName = '',
+            useAutoDetect = true
+         },
+         connectable = (vim.vm.device.VirtualDevice.ConnectInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            migrateConnect = <unset>,
+            startConnected = false,
+            allowGuestControl = true,
+            connected = false,
+            status = 'ok'
+         },
+         slotInfo = <unset>,
+         controllerKey = 200,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>
+      },
+      (vim.vm.device.VirtualDisk) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 2000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Hard disk 1',
+            summary = '9,437,184 KB'
+         },
+         backing = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            fileName = '[OSOL-VM-vSphereReplication01] vra-osol01/vra-osol01.vmdk',
+            datastore = 'vim.Datastore:datastore-30',
+            backingObjectId = '',
+            diskMode = 'persistent',
+            split = false,
+            writeThrough = false,
+            thinProvisioned = true,
+            eagerlyScrub = <unset>,
+            uuid = '6000C29c-0b9c-cfe6-873e-a13365dfc5c1',
+            contentId = '8d46ebc01eedba7305a5bce66953d22a',
+            changeId = <unset>,
+            parent = <unset>,
+            deltaDiskFormat = <unset>,
+            digestEnabled = false,
+            deltaGrainSize = <unset>,
+            deltaDiskFormatVariant = <unset>,
+            sharing = 'sharingNone',
+            keyId = <unset>
+         },
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 1000,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         capacityInKB = 9437184,
+         capacityInBytes = 9663676416,
+         shares = (vim.SharesInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            shares = 1000,
+            level = 'normal'
+         },
+         storageIOAllocation = (vim.StorageResourceManager.IOAllocationInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            limit = -1,
+            shares = (vim.SharesInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               shares = 1000,
+               level = 'normal'
+            },
+            reservation = 0
+         },
+         diskObjectId = '56-2000',
+         vFlashCacheConfigInfo = <unset>,
+         iofilter = (str) [],
+         vDiskId = <unset>,
+         nativeUnmanagedLinkedClone = <unset>,
+         independentFilters = (vim.vm.BaseIndependentFilterSpec) []
+      },
+      (vim.vm.device.VirtualDisk) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 2001,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Hard disk 2',
+            summary = '17,825,792 KB'
+         },
+         backing = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            fileName = '[OSOL-VM-vSphereReplication01] vra-osol01/vra-osol01_1.vmdk',
+            datastore = 'vim.Datastore:datastore-30',
+            backingObjectId = '',
+            diskMode = 'persistent',
+            split = false,
+            writeThrough = false,
+            thinProvisioned = true,
+            eagerlyScrub = <unset>,
+            uuid = '6000C293-9a3b-64db-26f4-ae577714f22b',
+            contentId = 'd8d264de61203d7fff534a9abb5a0427',
+            changeId = <unset>,
+            parent = <unset>,
+            deltaDiskFormat = <unset>,
+            digestEnabled = false,
+            deltaGrainSize = <unset>,
+            deltaDiskFormatVariant = <unset>,
+            sharing = 'sharingNone',
+            keyId = <unset>
+         },
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 1000,
+         unitNumber = 1,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         capacityInKB = 17825792,
+         capacityInBytes = 18253611008,
+         shares = (vim.SharesInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            shares = 1000,
+            level = 'normal'
+         },
+         storageIOAllocation = (vim.StorageResourceManager.IOAllocationInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            limit = -1,
+            shares = (vim.SharesInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               shares = 1000,
+               level = 'normal'
+            },
+            reservation = 0
+         },
+         diskObjectId = '56-2001',
+         vFlashCacheConfigInfo = <unset>,
+         iofilter = (str) [],
+         vDiskId = <unset>,
+         nativeUnmanagedLinkedClone = <unset>,
+         independentFilters = (vim.vm.BaseIndependentFilterSpec) []
+      },
+      (vim.vm.device.VirtualVmxnet3) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 4000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Network adapter 1',
+            summary = 'Production'
+         },
+         backing = (vim.vm.device.VirtualEthernetCard.NetworkBackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            deviceName = 'Production',
+            useAutoDetect = false,
+            network = 'vim.Network:network-34',
+            inPassthroughMode = <unset>
+         },
+         connectable = (vim.vm.device.VirtualDevice.ConnectInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            migrateConnect = <unset>,
+            startConnected = true,
+            allowGuestControl = true,
+            connected = true,
+            status = 'ok'
+         },
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 160
+         },
+         controllerKey = 100,
+         unitNumber = 7,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         addressType = 'assigned',
+         macAddress = '00:50:56:98:5a:79',
+         wakeOnLanEnabled = true,
+         resourceAllocation = (vim.vm.device.VirtualEthernetCard.ResourceAllocation) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            reservation = 0,
+            share = (vim.SharesInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               shares = 50,
+               level = 'normal'
+            },
+            limit = -1
+         },
+         externalId = <unset>,
+         uptCompatibilityEnabled = true,
+         uptv2Enabled = <unset>
+      }
+   ],
+   motherboardLayout = <unset>,
+   simultaneousThreads = <unset>
+}, 'vcpuConfig': (vim.vm.VcpuConfig) [], 'cpuAllocation': (vim.ResourceAllocationInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   reservation = 0,
+   expandableReservation = false,
+   limit = -1,
+   shares = (vim.SharesInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      shares = 4000,
+      level = 'normal'
+   },
+   overheadLimit = <unset>
+}, 'memoryAllocation': (vim.ResourceAllocationInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   reservation = 0,
+   expandableReservation = false,
+   limit = -1,
+   shares = (vim.SharesInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      shares = 81920,
+      level = 'normal'
+   },
+   overheadLimit = 95
+}, 'latencySensitivity': (vim.LatencySensitivity) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   level = 'normal',
+   sensitivity = <unset>
+}, 'memoryHotAddEnabled': False, 'cpuHotAddEnabled': False, 'cpuHotRemoveEnabled': False, 'hotPlugMemoryLimit': 8192, 'hotPlugMemoryIncrementSize': 0, 'cpuAffinity': None, 'memoryAffinity': None, 'networkShaper': None, 'extraConfig': (vim.option.OptionValue) [
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'nvram',
+      value = 'vra-osol01.nvram'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge0.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'svga.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'hpet0.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'ide0:0.autodetect',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'virtualHW.productCompatibility',
+      value = 'hosted'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'sched.swap.derivedName',
+      value = '/vmfs/volumes/5d6e9037-cedae590-18d8-d4ae528ebcfe/vra-osol01/vra-osol01-52880291.vswp'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'replay.supported',
+      value = 'false'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'replay.filename',
+      value = ''
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'scsi0:1.redo',
+      value = ''
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'scsi0:0.redo',
+      value = ''
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge0.pciSlotNumber',
+      value = '17'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.pciSlotNumber',
+      value = '21'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.pciSlotNumber',
+      value = '22'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.pciSlotNumber',
+      value = '23'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.pciSlotNumber',
+      value = '24'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'scsi0.pciSlotNumber',
+      value = '16'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'ethernet0.pciSlotNumber',
+      value = '160'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmci0.pciSlotNumber',
+      value = '32'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'monitor.phys_bits_used',
+      value = '40'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmotion.checkpointFBSize',
+      value = '4194304'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'softPowerOff',
+      value = 'false'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'numa.autosize.vcpu.maxPerVirtualNode',
+      value = '4'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'numa.autosize.cookie',
+      value = '40001'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmware.tools.internalversion',
+      value = '2147483647'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmware.tools.requiredversion',
+      value = '9541'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'migrate.hostLogState',
+      value = 'none'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'migrate.migrationId',
+      value = '4272178290598'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'migrate.hostLog',
+      value = './vra-osol01-52880291.hlog'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.hbr.hbrsrv-cert',
+      value = '\nBag Attributes\n    friendlyName: jetty\n    localKeyID: 54 69 6D 65 20 31 36 35 39 39 38 38 35 35 34 32 36 39 \nsubject=/O=Unknown/OU=Unknown/CN=vmreplosol01.pe280.bally.local\nissuer=/O=Unknown/OU=Unknown/CN=vmreplosol01.pe280.bally.local\n-----BEGIN CERTIFICATE-----\nMIIDOTCCAiGgAwIBAgIEHnrV9TANBgkqhkiG9w0BAQsFADBNMRAwDgYDVQQKEwdV\nbmtub3duMRAwDgYDVQQLEwdVbmtub3duMScwJQYDVQQDEx52bXJlcGxvc29sMDEu\ncGUyODAuYmFsbHkubG9jYWwwHhcNMTkxMTAxMDIwMDUwWhcNMjQxMDMwMDIwMDUw\nWjBNMRAwDgYDVQQKEwdVbmtub3duMRAwDgYDVQQLEwdVbmtub3duMScwJQYDVQQD\nEx52bXJlcGxvc29sMDEucGUyODAuYmFsbHkubG9jYWwwggEiMA0GCSqGSIb3DQEB\nAQUAA4IBDwAwggEKAoIBAQCJcqXHPDSYKOiTfNYIMEBKRR9At/t1Lg7VocLwoJPg\nHI1YcNXo+aM8WVhBkW6nsw9j7JcdK6kondOW2rfbZdmLvXGAZT3Ja1uNbbzVtSU8\n9FBws3RG3n1K9iTbaQOW2yubLYV5C6q3oaYK4p/Tn05TYVl9G0NRcpRcLJGwcEVk\nq8SYBc60SUJVpLqLt1vyCh0QqzdAHx9iAAba7gLnLBk+MCTAn7w6yADa01lMLwda\n52fcz92MOS0qf/Xd2W5mWTRuuYp/y0fGYCY/Gx0nab012gF8CEN/Ou9RRNM2RW6J\nSkRlSgiuTjDKpr506mae6cJ8JO7ZZhGOSjiHu6xKUUQDAgMBAAGjITAfMB0GA1Ud\nDgQWBBQRkm4It5iATKije9KE2XOLMGPmeTANBgkqhkiG9w0BAQsFAAOCAQEAS7Tq\nsBgeNqNRf2oY9HEPGSfvoalpEDfIepXsTBsTdFZ4nPg+jFphPvLF2tVdz6BU3C8U\n68MluXyKzh84hcC3hXrvI3B2IdvTPSbfa2t3iyXvJBjs5xvFGBCHX/tbwvYZ/RVx\nyXwYCMze76pKz8mGkSRnf1u+uhk1rZvVsfM0Ev2M8ig3wfBBf/NZ91HlpkW7V+Y2\nUntl/ibTm4HXR7rT0J1oJrsINT9dngBI7IlFOAO3BAHEeXrodi/xDU8fUfE096xR\n45USe0EBiu5jRAmR7wYeHWkK2TVrK1Qmn5f7Z4Kp/Flgy2cdcJ7KeYgb8dQPCn1Q\nYFWxxJh/Jab4ajwygQ==\n-----END CERTIFICATE-----'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.hbr.hbrsrv-thumbprint',
+      value = 'B9:04:6E:A4:15:EB:87:D3:C9:20:BB:79:81:73:A7:3D:79:B8:21:2A:8C:E0:AF:4A:EE:15:3F:59:4F:D0:64:A1'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.hbr.hms-thumbprint',
+      value = 'B9:04:6E:A4:15:EB:87:D3:C9:20:BB:79:81:73:A7:3D:79:B8:21:2A:8C:E0:AF:4A:EE:15:3F:59:4F:D0:64:A1'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.hbr.ip-for-hms',
+      value = '*'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.buildNumber',
+      value = '12406962'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.description',
+      value = 'open-vm-tools 10.3.10 build 12406962'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.versionNumber',
+      value = '10346'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.versionString',
+      value = '10.3.10'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmware.vami.features',
+      value = 'SUP'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmware.vami.http-port',
+      value = '5488'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmware.vami.https-clientkeyfile',
+      value = '/opt/vmware/etc/sfcb/file.pem'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmware.vami.https-clienttruststorefile',
+      value = '/opt/vmware/etc/sfcb/client.pem'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmware.vami.https-port',
+      value = '5489'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmware.vami.version',
+      value = '2010100'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'SCSI0:0.ctkEnabled',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'SCSI0:1.ctkEnabled',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'ctkEnabled',
+      value = 'true'
+   }
+], 'cpuFeatureMask': (vim.host.CpuIdInfo) [], 'datastoreUrl': (vim.vm.ConfigInfo.DatastoreUrlPair) [
+   (vim.vm.ConfigInfo.DatastoreUrlPair) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      name = 'OSOL-VM-vSphereReplication01',
+      url = '/vmfs/volumes/5d6e9037-cedae590-18d8-d4ae528ebcfe'
+   }
+], 'swapPlacement': 'inherit', 'bootOptions': (vim.vm.BootOptions) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   bootDelay = 0,
+   enterBIOSSetup = false,
+   efiSecureBootEnabled = <unset>,
+   bootRetryEnabled = false,
+   bootRetryDelay = 10000,
+   bootOrder = (vim.vm.BootOptions.BootableDevice) [],
+   networkBootProtocol = 'ipv4'
+}, 'ftInfo': None, 'repConfig': None, 'vAppConfig': (vim.vApp.VmConfigInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   product = (vim.vApp.ProductInfo) [
+      (vim.vApp.ProductInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 0,
+         classId = '',
+         instanceId = '',
+         name = 'vSphere Replication Appliance',
+         vendor = 'VMware, Inc.',
+         version = '8.2.0.9236',
+         fullVersion = '8.2.0.9236 Build 14761900',
+         vendorUrl = 'http://www.vmware.com',
+         productUrl = '',
+         appUrl = 'http://${vami.ip0.vSphere_Replication_Appliance}/'
+      },
+      (vim.vApp.ProductInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 1,
+         classId = 'vami',
+         instanceId = 'vSphere_Replication_Appliance',
+         name = '',
+         vendor = '',
+         version = '',
+         fullVersion = '',
+         vendorUrl = '',
+         productUrl = '',
+         appUrl = ''
+      },
+      (vim.vApp.ProductInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 2,
+         classId = 'vm',
+         instanceId = '',
+         name = '',
+         vendor = '',
+         version = '',
+         fullVersion = '',
+         vendorUrl = '',
+         productUrl = '',
+         appUrl = ''
+      }
+   ],
+   property = (vim.vApp.PropertyInfo) [
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 0,
+         classId = 'vami',
+         instanceId = 'vSphere_Replication_Appliance',
+         id = 'ip0',
+         category = 'Networking Properties',
+         label = 'Management Network IP Address',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = '',
+         value = '10.0.10.37',
+         description = 'The IP address for this interface.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 1,
+         classId = 'vami',
+         instanceId = 'vSphere_Replication_Appliance',
+         id = 'domain',
+         category = 'Networking Properties',
+         label = 'Domain Name',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = '',
+         value = 'pe280.bally.local',
+         description = "The domain name of this VM. (from the IP Pool associated with the vSphere network mapped to the 'Management Network' network)"
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 2,
+         classId = '',
+         instanceId = '',
+         id = 'migrate.password',
+         category = 'Aplicación',
+         label = 'Upgrade target password',
+         type = 'password',
+         typeReference = '',
+         userConfigurable = false,
+         defaultValue = '',
+         value = '',
+         description = 'The password for the older version VR appliance to be migrated to the deployed appliance.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 3,
+         classId = 'vami',
+         instanceId = 'vSphere_Replication_Appliance',
+         id = 'gateway',
+         category = 'Networking Properties',
+         label = 'Default Gateway',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = '',
+         value = '10.0.10.254',
+         description = "The default gateway address for this VM. (from the IP Pool associated with the vSphere network mapped to the 'Management Network' network)"
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 4,
+         classId = 'vm',
+         instanceId = '',
+         id = 'vmname',
+         category = '',
+         label = 'vmname',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = false,
+         defaultValue = 'vSphere_Replication_Appliance',
+         value = '',
+         description = ''
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 5,
+         classId = '',
+         instanceId = '',
+         id = 'deployment_scenario',
+         category = 'Aplicación',
+         label = 'Deployment Scenario',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = false,
+         defaultValue = 'default',
+         value = '',
+         description = 'Determines the set of services which will run in the deployed appliance (i.e. the appliance role).'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 6,
+         classId = '',
+         instanceId = '',
+         id = 'enable_coredump',
+         category = 'Aplicación',
+         label = 'Enable coredump',
+         type = 'boolean',
+         typeReference = '',
+         userConfigurable = false,
+         defaultValue = 'False',
+         value = '',
+         description = 'Enables coredump.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 7,
+         classId = '',
+         instanceId = '',
+         id = 'ntpserver',
+         category = 'Aplicación',
+         label = 'Servidores NTP',
+         type = 'string(1..)',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = '',
+         value = '10.0.10.13',
+         description = 'Lista separada por comas de los nombres de host o las direcciones IP de los servidores NTP.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 8,
+         classId = '',
+         instanceId = '',
+         id = 'enableFileIntegrity',
+         category = 'Aplicación',
+         label = 'Enable file integrity',
+         type = 'boolean',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = 'False',
+         value = 'True',
+         description = 'Enables file integrity monitoring of the VR appliance.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 9,
+         classId = 'vami',
+         instanceId = 'vSphere_Replication_Appliance',
+         id = 'DNS',
+         category = 'Networking Properties',
+         label = 'Domain Name Servers',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = '',
+         value = '10.0.10.13,10.0.10.11',
+         description = "The domain name server IP Addresses for this VM (comma separated). (from the IP Pool associated with the vSphere network mapped to the 'Management Network' network)"
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 10,
+         classId = 'vami',
+         instanceId = 'vSphere_Replication_Appliance',
+         id = 'searchpath',
+         category = 'Networking Properties',
+         label = 'Domain Search Path',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = '',
+         value = 'pe280.bally.local',
+         description = "The domain search path (comma or space separated domain names) for this VM. (from the IP Pool associated with the vSphere network mapped to the 'Management Network' network)"
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 12,
+         classId = '',
+         instanceId = '',
+         id = 'vami.hostname',
+         category = 'Aplicación',
+         label = 'Hostname',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = '',
+         value = 'vmreplosol01.pe280.bally.local',
+         description = 'The host name for this virtual machine. Provide the FQDN if you use a static IP. Leave blank to reverse look up the IP address if you use DHCP.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 13,
+         classId = '',
+         instanceId = '',
+         id = 'migrate.ssoadmin',
+         category = 'Aplicación',
+         label = 'SSO admin user name',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = false,
+         defaultValue = '',
+         value = '',
+         description = 'SSO admin user name. Used for fixing HMS extension/UI/permissions.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 14,
+         classId = '',
+         instanceId = '',
+         id = 'migrate.address',
+         category = 'Aplicación',
+         label = 'Upgrade target address',
+         type = 'string(..256)',
+         typeReference = '',
+         userConfigurable = false,
+         defaultValue = '',
+         value = '',
+         description = 'The address of an older version VR appliance to be migrated to the deployed appliance.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 15,
+         classId = '',
+         instanceId = '',
+         id = 'disableVcta',
+         category = 'Aplicación',
+         label = 'Disable VCTA',
+         type = 'boolean',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = 'False',
+         value = 'False',
+         description = 'Determines whether the VCTA service will be enabled. By default VCTA service is enabled. Selecting the checkbox will disable it.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 16,
+         classId = '',
+         instanceId = '',
+         id = 'migrate.ssopassword',
+         category = 'Aplicación',
+         label = 'SSO admin password',
+         type = 'password',
+         typeReference = '',
+         userConfigurable = false,
+         defaultValue = '',
+         value = '',
+         description = 'SSO admin password. Used for fixing HMS extension/UI/permissions.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 17,
+         classId = '',
+         instanceId = '',
+         id = 'enable_sshd',
+         category = 'Aplicación',
+         label = 'Enable SSHD',
+         type = 'boolean',
+         typeReference = '',
+         userConfigurable = false,
+         defaultValue = 'False',
+         value = '',
+         description = 'Determines whether the SSHD service will be enabled and started by default in the appliance.'
+      },
+      (vim.vApp.PropertyInfo) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 18,
+         classId = 'vami',
+         instanceId = 'vSphere_Replication_Appliance',
+         id = 'netmask0',
+         category = 'Networking Properties',
+         label = 'Management Network Netmask',
+         type = 'string',
+         typeReference = '',
+         userConfigurable = true,
+         defaultValue = '',
+         value = '255.255.255.0',
+         description = 'The netmask or prefix for this interface.'
+      }
+   ],
+   ipAssignment = (vim.vApp.IPAssignmentInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      supportedAllocationScheme = (str) [
+         'ovfenv',
+         'dhcp'
+      ],
+      ipAllocationPolicy = 'fixedPolicy',
+      supportedIpProtocol = (str) [
+         'IPv4',
+         'IPv6'
+      ],
+      ipProtocol = 'IPv4'
+   },
+   eula = (str) [
+      '\ufeffvSphere Replication\n\nACUERDO DE LICENCIA DE USUARIO FINAL DE\nVMWARE\n\nTENGA EN CUENTA QUE LAS CONDICIONES DE ESTE ACUERDO\nDE LICENCIA DE USUARIO FINAL REGIRÁN EL USO QUE HAGA DEL\nSOFTWARE, CON INDEPENDENCIA DE LOS TÉRMINOS QUE\nPUEDAN APARECER DURANTE LA INSTALACIÓN DEL SOFTWARE.\n\nINFORMACIÓN IMPORTANTE:  AL DESCARGAR, INSTALAR O\nUTILIZAR EL SOFTWARE, ACEPTA LAS CONDICIONES DE ESTE\nACUERDO DE LICENCIA DE USUARIO FINAL (END USER LICENSE\nAGREEMENT) ("EULA"), TANTO SI LAS SUSCRIBE A TÍTULO\nPERSONAL COMO SI REPRESENTA A UNA PERSONA JURÍDICA. EN\nCASO DE NO ACEPTARLAS, NO DEBERÁ DESCARGAR, INSTALAR NI\nUTILIZAR EL SOFTWARE Y DEBERÁ BORRAR O DEVOLVER EL\nSOFTWARE SIN USAR AL PROVEEDOR DEL QUE LO ADQUIRIÓ EN\nLOS TREINTA (30) DÍAS POSTERIORES A LA FECHA DE COMPRA.\nEN CASO DE HABER ABONADO UN CANON DE LICENCIA POR EL\nSOFTWARE, PODRÁ SOLICITAR SU REEMBOLSO.\n\nLICENCIA DE EVALUACIÓN.  Si la licencia se le ha concedido con fines\nde evaluación, solo podrá usar el Software en entornos no profesionales\ndurante el período de validez de la Clave de Licencia. Sin perjuicio de lo\ndispuesto en otras cláusulas de este EULA, la Licencia de evaluación del\nsoftware se facilita "tal cual", sin indemnización, servicio de asistencia ni\ngarantías explícitas o implícitas de ninguna clase.\n\n1.\tDEFINICIONES.\n\n1.1\tCon respecto a una parte en un momento dado, por "Afiliado" se\nentenderá una entidad que dicha parte controle, de forma directa o\nindirecta, que esté bajo un control común con el de esta o controle\nesa parte, donde "control" significa la propiedad, derechos de voto o\nsimilares que represente el cincuenta por ciento (50%) o más de los\nderechos totales de voto o similares en esa entidad.\n\n1.2\tPor "Documentación" se entenderá la documentación que\nnormalmente le proporciona VMware con el Software, revisada por\nVMware de forma periódica, y que puede incluir manuales de usuario,\ninstrucciones de uso, guías de instalación, notas de la versión y\narchivos de ayuda en línea referentes al uso del Software.\n\n1.3\tPor "Sistemas operativos invitados" se entenderán los sistemas\noperativos de terceros instalados en una Máquina Virtual, cuyas\nlicencias ha obtenido Usted de forma independiente, y que se\nejecutan con el Software.\n\n1.4\tPor "Derechos de propiedad intelectual" se entenderán todos los\nderechos de propiedad intelectual a nivel mundial, incluidos, entre\notros, derechos de autor, marcas comerciales, marcas de servicio,\nsecretos industriales, conocimientos prácticos, inventos, patentes,\nsolicitudes de patente y todos los demás derechos de propiedad,\nindependientemente de que estén registrados o no.\n\n1.5\tPor "Licencia" se entenderá una licencia otorgada en virtud de lo\ndispuesto en la Sección 2.1 (Otorgamiento de licencia general).\n\n1.6\tPor "Clave de licencia" se entenderá un número de serie que le\npermite activar y utilizar el Software.\n\n1.7\tPor "Validez de la licencia" se entenderá la duración de una\nLicencia según lo especificado en el Pedido.\n\n1.8\tPor "Tipo de Licencia" se entenderá el tipo de Licencia\ncorrespondiente al Software, y que se describe más detalladamente\nen el Pedido.\n\n1.9\tPor "Software de código abierto" u "OSS" se entenderán los\ncomponentes de software integrados en el Software y\nproporcionados mediante condiciones de licencia independientes, las\ncuales se pueden encontrar en el archivo open_source_licenses.txt\n(o archivo similar) proporcionado con el Software o en\nwww.vmware.com/download/open_source.html.\n\n1.10\tPor "Pedido" se entenderá un pedido de compra, un acuerdo de\nlicencia empresarial u otro documento de pedido emitido por Usted a\nVMware o a un distribuidor autorizado de VMware que haga\nreferencia a este EULA o incluya este EULA y que VMware acepte\ntal como se establece en la Sección 4 (Pedido).\n\n1.11\tPor "Guía del producto" se entenderá la versión actual de la Guía\ndel producto de VMware en el momento del Pedido, de la que se\npueden encontrar copias en www.vmware.com/download/eula.\n\n1.12\tPor "Condiciones de los servicios de soporte" se entenderán las\npolíticas de soporte actuales de VMware, cuya copia está publicada\nen www.vmware.com/support/policies.\n\n1.13\tPor "Software" se entenderán VMware Tools y los programas\ninformáticos de VMware incluidos en la lista de precios comerciales\nde VMware cuya licencia se adquiere en virtud de un Pedido, junto\ncon cualquier código de software relacionado con lo anterior que se\nle proporcione de conformidad con lo dispuesto en un contrato de\nservicios de soporte y suscripción y que no esté sujeto a un acuerdo\nde licencia propio.\n\n1.14\tPor "Territorio" se entenderá el país o los países en los que se le\nhaya facturado; no obstante, hay que tener en cuenta que, si se le ha\nfacturado dentro de cualquiera de los estados miembro del Espacio\nEconómico Europeo, podrá implantar el Software correspondiente en\ncualquier parte del Espacio Económico Europeo.\n\n1.15\tPor "Agente externo" se entenderá un tercero que le proporcione\nservicios de tecnología de la información de acuerdo con lo\nestablecido en un contrato por escrito con Usted.\n\n1.16\tPor "Máquina virtual" se entenderá un contenedor de software con\nsu propio sistema operativo que ejecute aplicaciones al igual que una\nmáquina física.\n\n1.17\tPor "VMware" se entenderá VMware, Inc., una compañía de\nDelaware, si está adquiriendo Licencias o servicios para usarlos en\nlos Estados Unidos, y VMware International Limited, una empresa\norganizada y registrada de acuerdo con la legislación de Irlanda,\npara todas las demás compras.\n\n1.18\tPor "VMware Tools" se entenderá el paquete de utilidades y\ncontroladores, con Licencia de VMware bajo el nombre "VMware\nTools", que puede instalarse en un Sistema operativo invitado para\nmejorar el rendimiento y la funcionalidad de dicho Sistema operativo\ninvitado cuando se ejecuta en una Máquina virtual.\n\n2.\t\tOTORGAMIENTO DE LICENCIA.\n\n2.1\tOtorgamiento de licencia general.  VMware le otorga una licencia\nno exclusiva e intransferible (excepto lo dispuesto en la Sección 12.1\n(Transferencias; Asignación) para utilizar el Software y la\nDocumentación durante el período de la licencia y dentro del\nTerritorio, únicamente para sus operaciones comerciales internas y\nsujeta a las cláusulas de la Guía del producto. A menos que se\nindique lo contrario en el Pedido, las licencias que se le otorguen\nserán perpetuas, se utilizarán únicamente para el código objeto y\ncomenzarán a partir de la entrega de los medios físicos o de la fecha\nen la que se le notifique la disponibilidad de la descarga electrónica.\n\n2.2\tAgentes externos.  En virtud de la Licencia que se le ha otorgado\nde acuerdo con la Sección 2.1 (Otorgamiento de licencia general)\nanterior, podrá permitir que sus Agentes externos accedan y/o\nutilicen el Software en representación suya únicamente para fines\nrelacionados con el suministro de servicios, con la condición de que\nUsted será responsable absoluto del cumplimiento de los términos y\ncondiciones de este EULA por parte de sus Agentes externos y que\ncualquier infracción de este EULA por parte de un Agente externo se\nconsiderará una infracción suya.\n\n2.3\tCopias permitidas.  Puede copiar el Software y la Documentación\nsegún sea necesario para instalar y ejecutar las copias con licencia,\nde lo contrario, únicamente podrá hacerlo para fines de archivado.\n\n2.4\tEstudios comparativos.  Puede utilizar el Software para realizar\npruebas internas de rendimiento y estudios comparativos. Solo\npuede publicar o distribuir de otro modo a terceros los resultados de\nestos estudios de la siguiente manera:  (a) si el estudio está\nrelacionado con los productos Workstation o Fusion de VMware, solo\nsi envía una copia de su estudio a benchmark@vmware.com antes\nde la distribución; (b) si el estudio está relacionado con el Software,\nsolo si VMware ha revisado y aprobado la metodología, los\nsupuestos y otros parámetros relacionados con dicho estudio\n(póngase en contacto con VMware enviando un mensaje a\nbenchmark@vmware.com para solicitar la revisión y aprobación)\nantes de la publicación y distribución.\n\n2.5\tVMware Tools.  Podrá distribuir VMware Tools a terceros\núnicamente cuando se instale un Sistema operativo invitado en una\nMáquina virtual. Será responsable del cumplimiento por parte de\ndichos terceros de los términos y condiciones de este EULA.\n\n2.6\tSoftware de código abierto.  Sin perjuicio de lo establecido en el\npresente en sentido contrario, el Software de código abierto se le otorga\nen virtud de las condiciones concretas de dicho OSS, detalladas en el\narchivo open_source_licenses.txt, la Documentación o, si procede, los\narchivos fuente del Software correspondientes, disponibles aquí:\nwww.vmware.com/download/open_source.html. Estas condiciones\nde licencia de OSS son coherentes con la licencia otorgada en la\nSección 2 (Otorgamiento de licencia) y pueden contener derechos\nadicionales en su beneficio. Las condiciones de licencia de OSS\ntendrán prioridad sobre este EULA hasta el punto en que este EULA\nle imponga mayores restricciones que las condiciones de licencia\nconcretas del OSS. En la medida en la que la licencia de cualquier\nSoftware de código abierto requiera que VMware ponga a su\ndisposición el código abierto y/o las modificaciones correspondientes\n(los "Archivos fuente"), podrá obtener una copia de los Archivos\nfuente aplicables desde el sitio web de VMware en\nwww.vmware.com/download/open_source.html o enviando una\nsolicitud por escrito con su nombre y dirección a:  VMware, Inc.,\n3401 Hillview Avenue, Palo Alto, CA 94304, Estados Unidos. Todas\nlas solicitudes deben especificar claramente:  Solicitud de archivos\nde código abierto, Atención:  Consejo General. Esta oferta para\nobtener una copia de los Archivos fuente es válida durante tres años\na partir de la fecha en la que adquirió este Software.\n\n3.\tRESTRICCIONES; PROPIEDAD.\n\n3.1\tRestricciones de la licencia.  Sin el previo consentimiento escrito\nde VMware, no debe ni debe permitir a terceros:  (a) utilizar el\nSoftware en un proveedor de servicios de aplicaciones, oficina de\nservicios o capacidad similar para terceros, excepto que puede\nutilizar el Software para proporcionar servicios alojados a las\nempresas Afiliadas; (b) divulgar a terceros los resultados de pruebas\ncomparativas o análisis comparativos o competitivos del Software de\nVMware realizados por Usted o en su nombre, excepto lo\nespecificado en la Sección 2.4 (Comparativa); (c) poner el Software\nde ningún modo a disposición de otras personas que no sean\nempleados o contratistas razonablemente aceptables para VMware y\nque requieran acceso al uso del Software en su nombre de una\nforma que permita este EULA, excepto lo especificado en la Sección\n2.2 (Agentes externos); (d) transferir u otorgar sublicencias del\nSoftware o de la Documentación a un Afiliado o tercero, excepto lo\nque está expresamente permitido en la Sección 12.1 (Transferencias;\nAsignación); (e) utilizar el Software en conflicto con los términos y\nrestricciones del modelo de licencia del Software y otros requisitos\nespecificados en la Guía de producto y/o presupuesto de VMware; (f)\nexcepto en la medida permitida por las leyes aplicables, modificar,\ntraducir, mejorar o crear trabajos derivados del Software o realizar\ningeniería inversa, descompilar o, de otro modo, intentar derivar el\ncódigo fuente del Software, excepto lo especificado en la Sección 3.2\n(Descompilación); (g) eliminar cualquier derecho de autor o aviso de\npropiedad en el Software o en cualquier copia del mismo; o (h)\ninfringir o evitar cualquier restricción tecnológica del Software o\nespecificada en este EULA, como mediante software o servicios.\n\n3.2\tDescompilación.  Sin perjuicio de lo anterior, se permite la\ndescompilación del Software en la medida en que la legislación del\nTerritorio le otorgue expresamente el derecho a hacerlo con el fin de\nobtener información necesaria para hacer que el Software sea\ninteroperable con otro software; no obstante, primero deberá solicitar\ndicha información a VMware (enviando un correo a la dirección\ninfo@vmware.com), facilitar toda la información que se le solicite\n(dentro de lo razonable) para que VMware evalúe su solicitud y\npueda, si lo considera oportuno, proporcionarle dicha información de\ninteroperabilidad, imponer condiciones razonables, incluidos unos\nhonorarios razonables, sobre el uso del Software, u ofrecerle\nalternativas que garanticen la protección de los derechos de\npropiedad de VMware y afecten en menor medida a dichos derechos\nde propiedad.\n\n3.3\tPropiedad.  El Software y la Documentation, todas sus copias y\npartes, y todas las mejoras, modificaciones y obras derivadas de\nestos, así como todos los Derechos de propiedad intelectual, son y\nserán propiedad única y exclusiva de VMware y sus licenciantes. Sus\nderechos de uso del Software y la Documentación se limitarán a los\nque se hayan otorgado expresamente en este EULA y en cualquier\notro Pedido correspondiente. No se presupone ningún otro derecho\nen relación con el Software ni ningún otro Derecho de propiedad\nintelectual relacionado. No tiene permiso para utilizar (ni podrá\npermitir que otras personas utilicen) el Software, la Documentación ni\nninguna de sus partes, salvo que se autorice expresamente en este\nEULA o en el Pedido correspondiente. VMware se reserva todos los\nderechos que no se le hayan concedido expresamente a Usted.\nVMware no transfiere derechos de propiedad de ningún Software.\n\n3.4\tSistemas operativos invitados.  Determinado Software permite\nque los Sistemas operativos invitados y los programas de aplicación\nse ejecuten en un sistema informático. Usted reconoce que la\nobtención y el cumplimiento de las licencias necesarias para utilizar\nel software de terceros es responsabilidad suya.\n\n4.\tPEDIDO.  Su Pedido está sujeto a este EULA. Un Pedido no tendrá\ncarácter vinculante para VMware hasta que VMware lo acepte. Los\nPedidos de Software se considerarán aceptados una vez que\nVMware entregue el Software incluido en dicho Pedido. No es\nnecesario firmar los Pedidos enviados a VMware para que estos\nsean válidos y aplicables.\n\n5.\tREGISTROS Y AUDITORÍA.  Durante el período de Validez del\nSoftware y durante dos (2) años a partir de la caducidad o\nfinalización del mismo, Usted deberá mantener registros precisos del\nuso que hace del Software con el fin de demostrar que cumple las\ncondiciones de este EULA. Durante este período, VMware tendrá\nderecho de auditar el uso que haga del Software para confirmar el\ncumplimiento con las condiciones de este EULA. Esta auditoría está\nsujeta a una notificación previa razonable por parte de VMware y no\ninterferirá de forma poco razonable con sus actividades\nempresariales. VMware no podrá realizar más de una (1) auditoría en\ncada período de doce (12) meses y únicamente podrá hacerlo\ndurante horas de trabajo normales. Cooperará de forma razonable\ncon VMware y con cualquier auditor externo y, sin perjuicio de los\nderechos de VMware, solucionará cualquier incumplimiento que\nidentifique la auditoría pagando un importe adicional cuanto antes.\nReembolsará sin demora a VMware todos los costes razonables de\nla auditoría en caso de que esta revele una reducción del pago\nsuperior a un cinco (5%) por ciento de las tasas pagaderas del\nSoftware por su parte para el período auditado o que no ha cumplido\nde forma material con la conservación de registros precisos del uso\ndel Software.\n\n6.\tSERVICIOS DE SOPORTE Y SUSCRIPCIÓN.  Los servicios de\nsoporte y suscripción aplicables al Software que proporciona VMware\nen virtud de este EULA se limitan a lo indicado expresamente en la\nGuía del producto y no incluyen ningún derecho a actualizar, mejorar\no ampliar el Software desarrollado por VMware, a menos que se\nadquieran por separado los servicios pertinentes de soporte y\nsuscripción de VMware. Dichos servicios de soporte o suscripción\nestán sujetos a las Condiciones de los servicios de soporte.\n\n7.\tGARANTÍAS.\n\n7.1\tGarantía del software, duración y compensación.  VMware le\ngarantiza que, durante un período de noventa (90) días a partir del\naviso de disponibilidad de la descarga electrónica o entrega\n("Período de garantía"), el Software se ajustará de forma sustancial\na la Documentación correspondiente, siempre y cuando el Software:\n(a) se haya instalado y utilizado correctamente en todo momento\nconfirme a la Documentación pertinente; y (b) ninguna otra persona,\naparte de VMware o de su representante autorizado, lo haya\nmodificado o haya realizado adiciones a este. VMware se\ncompromete, asumiendo los gastos y como única obligación por su\nparte y compensación exclusiva para Usted en caso de\nincumplimiento de esta garantía, a sustituir el Software o a corregir\nlos errores reproducibles en el Software de los que Usted haya\ninformado a VMware por escrito durante el Período de garantía. Si\nVMware determina que no puede corregir el error ni sustituir el\nSoftware, VMware le reembolsará el importe que haya pagado por\nese Software, en cuyo caso la Licencia para el Software perderá su\nvigencia.\n\n7.2\tExclusión de garantías del Software.  APARTE DE LA GARANTÍA\nANTERIOR, Y EN LA MAYOR MEDIDA DE LOS POSIBLE QUE\nPERMITA LA LEY VIGENTE, VMWARE Y SUS PROVEEDORES NO\nREALIZARÁN NINGUNA OTRA GARANTÍA EXPRESA EN\nRELACIÓN CON ESTE EULA Y RENUNCIA A TODAS LAS\nGARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, ADECUACIÓN A\nUN FIN CONCRETO, TÍTULO Y NO INFRACCIÓN, ASÍ COMO\nCUALQUIER GARANTÍA DERIVADA DE ESTATUTOS, APLICACIÓN\nDE LA LEY, NEGOCIACIÓN O RENDIMIENTO O USO DE\nCOMERCIO. VMWARE Y SUS LICENCIANTES NO GARANTIZAN\nQUE EL SOFTWARE FUNCIONE DE FORMA ININTERRUMPIDA O\nQUE ESTÉ LIBRE DE DEFECTOS O QUE CUMPLA CON SUS\nREQUISITOS.\n\n8.\tINDEMNIZACIÓN POR PROPIEDAD INTELECTUAL.\n\n8.1\tDefensa e indemnización.  Con arreglo a lo dispuesto en el resto\nde esta Sección 8 (Indemnización por propiedad intelectual), VMware\nle defenderá frente a terceros que reclamen que el Software infringe\npatentes, marcas comerciales o derechos de autor de dicho tercero,\no que usurpa un secreto industrial (pero solo en la medida en que\ndicha usurpación no sea resultado de sus acciones) al amparo de la\nlegislación de:  (a) Estados Unidos y Canadá; (b) el Espacio\nEconómico Europeo; (c) Australia; (d) Nueva Zelanda; (e) Japón; o (f)\nla República Popular de China, en la medida en que dichos países\nsean parte del Territorio para el que se otorgó la Licencia\n("Reclamación de infracción") y le indemnizará por los costes en que\nhaya incurrido y por las indemnizaciones por daños y perjuicios que\nun tribunal de jurisdicción competente le obligue a Usted a pagar a\ndicho tercero. Las obligaciones anteriores solo son aplicables si\nUsted:  (i) notifica inmediatamente a VMware por escrito de la\nReclamación de infracción; (ii) permite que VMware se ocupe en\nexclusiva de la defensa de la reclamación y negociación de cualquier\nacuerdo; y (iii) coopera de forma razonable en caso de que VMware\nsolicite su ayuda. Usted no podrá resolver ni conciliar ninguna\nReclamación de infracción si el consentimiento previo por escrito de\nVMware.\n\n8.2\tCompensaciones.  Si el Software que supuestamente se está\ninfringiendo sea, o VMware considere que se puede convertir en\nobjeto de una Reclamación de infracción, VMware, a su entera\ndiscreción y asumiendo los gastos, realizará una de las siguientes\nacciones:  (a) conseguirá los derechos necesarios para que Usted\npueda seguir utilizando el Software afectado; (b) sustituirá o\nmodificará el Software afectado para que cese la infracción; o (c)\ncancelará la Licencia del Software afectado e interrumpirá los\nservicios de soporte relacionados y, una vez que Usted certifique que\nha eliminado el Software afectado, le reembolsará:  (i) los cánones\nque ha abonado por la Licencia del Software afectado, menos la\namortización lineal sobre una vida útil de tres (3) años a partir de la\nfecha de entrega de dicho Software; y (ii) cualquier canon de servicio\nprepagado imputable a servicios de soporte relacionados que se\ndebían prestar después de la fecha de cancelación de dicho servicio.\nNada de lo dispuesto en esta Sección 8.2 (Compensaciones) limitará\nla obligación de VMware establecida en la Sección 8.1 (Defensa e\nindemnización) de defenderle e indemnizarle, siempre y cuando\nsustituya el supuesto Software infractor en cuanto VMware le\nentregue un Software alternativo y/o cese el uso del supuesto\nSoftware infractor cuando VMware le notifique la cancelación de la\nLicencia afectada.\n\n8.3\tExclusiones.  Sin perjuicio de lo anterior, VMware no tendrá\nninguna obligación derivada de lo dispuesto en esta Sección 8\n(Indemnización de propiedad intelectual) o en cualquier otra sección\ncon respecto a las reclamaciones basadas en:  (a) una combinación\nde Software con productos que no sea de VMware (salvo los\nproductos que no son de VMware que se incluyen en el Pedido y se\nutilizan sin ninguna modificación); (b) uso con un fin o de modo para\nel que no se diseñó el Software; (c) uso de una versión anterior del\nSoftware cuando la infracción se podría haber evitado usando una\nrevisión de VMware más reciente; (d) una modificación del Software\nrealizada sin la autorización expresa por escrito de VMware; (e) una\nreclamación relacionada con software de código abierto o tecnología\nde software gratuito o una obra derivada o cualquier otra adaptación\nde esta que no esté incluida en el Software de la lista de precios\ncomerciales de VMware; o (f) cualquier Software suministrado sin\ncargo, en versión beta o de evaluación. ESTA SECCIÓN 8\n(INDEMNIZACIÓN DE PROPIEDAD INTELECTUAL) SE\nESTABLECE EL ÚNICO RECURSO DEL QUE DISPONE USTED Y\nTODA LA RESPONSABILIDAD DE VMWARE ANTE CUALQUIER\nRECLAMACIÓN O ACCIÓN POR INFRACCIÓN.\n9.\tLIMITACIÓN DE RESPONSABILIDAD.\n\n9.1\tLímite de responsabilidad.  EN LA MEDIDA EN QUE LA LEY LO\nPERMITA, VMWARE Y SUS LICENCIANTES NO SERÁN\nRESPONSABLES EN NINGÚN CASO DE PÉRDIDAS DE\nBENEFICIOS U OPORTUNIDADES DE NEGOCIOS, PÉRDIDA DE\nUSO, PÉRDIDA DE INGRESOS, PÉRDIDA DE PLUSVALÍA,\nINTERRUPCIÓN DEL NEGOCIO, PÉRDIDA DE DATOS O\nCUALESQUIERA DAÑOS INDIRECTOS, ESPECIALES,\nACCESORIOS O DERIVADOS EN VIRTUD DE CUALQUIER\nTEORÍA DE RESPONSABILIDAD, TANTO SI SE FUNDAMENTAN\nEN MOTIVOS CONTRACTUALES O EXTRACONTRACTUALES, EN\nLA EXISTENCIA DE NEGLIGENCIA, EN RESPONSABILIDADES\nRELACIONADAS CON EL PRODUCTO O EN CUALQUIER OTRA\nCAUSA. ALGUNAS JURISDICCIONES NO ADMITEN LA\nEXCLUSIÓN NI LA LIMITACIÓN DE RESPONSABILIDAD POR\nDAÑOS DERIVADOS O EMERGENTES, POR LO QUE LA\nLIMITACIÓN PRECEDENTE PODRÍA NO APLICARSE EN SU\nCASO. LA RESPONSABILIDAD TOTAL DE VMWARE Y DE SUS\nLICENCIANTES EN VIRTUD DE ESTE EULA, NO SUPERARÁ EN\nNINGÚN CASO, TANTO SI LA RECLAMACIÓN SE FUNDAMENTA\nEN MOTIVOS CONTRACTUALES, ACTOS ILÍCITOS, ESTRICTA\nRESPONSABILIDAD O, DE CUALQUIER OTRO MODO, EL\nIMPORTE DE LA LICENCIA QUE USTED PAGÓ POR EL\nSOFTWARE QUE PRODUCE LA INFRACCIÓN O 5.000 USD. LAS\nLIMITACIONES ANTERIORES SE APLICARÁN CON\nINDEPENDENCIA DE QUE SE HAYA ADVERTIDO O NO A\nVMWARE O A SUS LICENCIANTES DE LA POSIBILIDAD DE\nTALES DAÑOS E INCLUSO SI ALGUNO DE LOS MEDIOS DE\nRESARCIMIENTO NO LOGRA CUMPLIR SU OBJETIVO\nESENCIAL.\n\n9.2\tLimitaciones adicionales.  Los licenciantes de VMware no tendrán\nresponsabilidad de ningún tipo en virtud de este EULA y la\nresponsabilidad de VMware en relación con cualquier software de\nterceros incluido en el Software estará sujeta a la Sección 9.1\n(Limitación de responsabilidad). Usted no podrá presentar una\nreclamación en virtud de este EULA una vez transcurridos dieciocho\n(18) meses tras el origen del fundamento de la demanda.\n\n10.\tRESOLUCIÓN.\n\n10.1\tValidez del EULA.  El periodo de validez de este EULA comienza\ncon el aviso de disponibilidad de descarga electrónica o entrega del\nSoftware y continúa hasta que este EULA finalice en virtud de esta\nSección 10.\n\n10.2\tResolución por incumplimiento.  VMware podrá resolver este\nEULA a partir del momento en que se lo comunique a Usted por\nescrito si:  (a) Usted no abona la totalidad de los honorarios en\nvirtud de un Pedido correspondiente a partir de los diez (10) días tras\nla recepción de la notificación por escrito por parte de VMware de\nque la fecha del pago ha vencido; o (b) Usted incumple cualquier\ncláusula de este EULA y no rectifica en un plazo de treinta (30) días\ntras la recepción de la notificación por escrito de VMware.\n\n10.3\tResolución por insolvencia.  VMware podrá resolver este EULA a\npartir del momento en el que se lo comunique a Usted por escrito si:\n(a) cancela o suspende su negocio; (b) se declara insolvente, admite\npor escrito que no puede pagar sus deudas vencidas, cede sus\nbienes en favor de los acreedores; o pasa a estar controlado por un\nfideicomisario, un síndico o una autoridad similar; o (c) es objeto de\nun procedimiento de quiebra o insolvencia.\n\n10.4\tEfecto de la resolución.  Tras la finalización por parte de VMware\nde este EULA:  (a) todos los derechos de Licencia del Software que\nse le han otorgado a Usted en virtud de este EULA perderán su\nvigencia; y (b) Usted deberá interrumpir el uso de todo el Software y\ndevolver o certificar la destrucción del mismo y de las Claves de\nlicencia (incluyendo copias) a VMware, y devolver, o si VMware así\nse lo solicitara, destruir cualquier información confidencial de\nVMware que posea o controle y demostrar por escrito a VMware que\nha cumplido con la totalidad de estos requisitos. Cualquier cláusula\npermanecerá en vigor tras la finalización o caducidad si por su\nnaturaleza y contexto se ha diseñado para persistir, incluyendo las\nSecciones 1 (Definiciones), 2.6 (Software de código abierto), 3\n(Restricciones; Propiedad), 5 (Registros y auditoría), 7.2 (Exclusión\nde garantía del Software), 9 (Limitación de responsabilidad), 10\n(Resolución), 11 (Información confidencial) y 12 (General).\n\n11.\tINFORMACIÓN CONFIDENCIAL.\n\n11.1\tDefinición.  Por "Información confidencial" se entenderá la\ninformación o materiales facilitados por una de las partes\n("Declarante") a otra parte ("Beneficiario") que sean tangibles y se\nclasifiquen como "confidencial" o similar, o la información que una\npersona tenía razones para saber o debería haber sabido que era\nconfidencial. La siguiente información se considerará Información\nconfidencial independientemente de que esté marcada o identificada\ncomo tal:  (a) Claves de Licencia; (b) información relativa a los\nprecios de VMware, guías de productos o planes de marketing\nestratégicos; y (c) materiales privados relacionados con el Software.\n\n11.2\tProtección.  El Beneficiario podrá utilizar la Información\nconfidencial facilitada por el Declarante; (a) para ejercer sus\nderechos y cumplir con sus obligaciones en virtud de este EULA; o (b)\nen conexión con la actual relación comercial entre las partes. El\nBeneficiario no podrá utilizar la Información confidencial facilitada por\nel Declarante con ningún fin que no permita expresamente este\nEULA, y únicamente podrá revelar la Información confidencial\nfacilitada por el Declarante a los empleados o contratistas del\nBeneficiario que deban conocer dicha Información confidencial con el\nfin de cumplir con este EULA y que tengan la misma obligación de\nconfidencialidad que el propio Beneficiario. El Beneficiario deberá\nproteger la Información confidencial frente al uso, acceso o\nrevelación no autorizada de la misma manera en que el Beneficiario\nprotege su propia información confidencial o de propiedad de\nnaturaleza similar con todo el cuidado razonable.\n\n11.3\tExcepciones.  Las obligaciones del Beneficiario en virtud de la\nSección 11.2 (Protección) con respecto a cualquier Información\nconfidencial quedarán interrumpidas si el Beneficiario puede\ndemostrar por escrito que dicha información:  (a) ya estaba en\nconocimiento del Beneficiario cuando el Declarante la reveló; (b) fue\nrevelada al Beneficiario por un tercero que tenía derecho a revelarla\nsin restricciones de confidencialidad; (c) se encuentra, o por\ncircunstancias ajenas al Beneficiario se ha puesto, a disposición del\npúblico en general; o (d) llegó a conocimiento del Beneficiario sin\nacceder ni utilizar la información del Declarante. Además, el\nBeneficiario tendrá permiso para revelar Información confidencial en\nla medida en que la ley, un tribunal o un órgano judicial o\nadministrativo similar le obligue a ello, siempre y cuando el\nBeneficiario notifique inmediatamente y por escrito al Declarante de\nla obligación de dicha revelación y coopere con el Declarante, a\npetición de y con cargos a cuenta de este, en cualquier acción legal\npara impugnar o limitar el alcance de dicha obligación de revelación.\n\n11.4\tPrivacidad de datos.  Usted manifiesta su conformidad para que\nVMware procese información técnica y otro tipo de información\nrelacionada acerca de su uso del Software, como la dirección de\nprotocolo de Internet, identificación de su equipo, sistema operativo,\nprogramas de aplicación, periféricos; y estadísticas de uso del\nSoftware con las que no pueda identificarse a personas para facilitar\nla prestación de servicios de actualizaciones, soporte, facturación o\nen línea, y para que transfiera periódicamente dicha información a\notras empresas del grupo mundial de VMware. En la medida en que\nesta información consiste en datos personales, VMware asumirá el\ncontrol de dichos datos personales. En la medida en que actúe como\ncontrolador, cada parte cumplirá en todo momento con sus\nobligaciones en virtud de la legislación aplicable sobre la protección\nde datos.\n\n12.\tGENERAL.\n\n12.1\tTransferencias; Asignación.  Excepto en la medida en la que la\ntransferencia pueda no estar restringida por la ley o según lo\npermitido por las políticas de transferencia y asignación de VMware,\nen todos los casos siguiendo el proceso establecido en\nwww.vmware.com/support/policies/licensingpolicies.html, Usted no\nasignará este EULA, ningún Pedido o ningún derecho u obligación\ndel mismo, ni delegará ningún rendimiento sin el consentimiento\nprevio por escrito de VMware, cuyo consentimiento no será\ndenegado sin razón. Cualquier otro intento de asignación o\ntransferencia realizado por Usted se anulará. VMware puede hacer\nuso de sus Afiliados u otros subcontratistas lo suficientemente\ncualificados para proporcionarle servicios, siempre y cuando VMware\nsiga siendo responsable ante Usted por el rendimiento de tales\nservicios.\n\n12.2\tNotificaciones.  Toda notificación que le envíe VMware en virtud de\neste EULA se enviará por correo postal, correo electrónico o fax.\n\n12.3\tRenuncia.  El incumplimiento de cualquier cláusula de este EULA\nno constituirá una renuncia.\n\n12.4\tNulidad parcial.  Si no pudiera exigirse el cumplimiento de\ncualquier parte de este EULA, la validez de las partes restantes no\nse vería afectada.\n\n12.5\tCumplimiento de la legislación, Control de la exportaciones,\nNormativas gubernamentales.  Cada una de las partes deberá\ncumplir con la legislación aplicable a las acciones contempladas en\neste EULA. Usted reconoce que el Software es de origen\nestadounidense, que está sometido a la normativa sobre\nexportaciones de EE. UU., que puede estar sometido a las leyes\nsobre control de exportaciones del territorio correspondiente, y que\nno se permiten excepciones contrarias a las leyes aplicables de\ncontrol de exportaciones. Usted manifiesta que (1) no es (a) natural,\nciudadano ni residente de países a los que Estados Unidos tenga\nprohibidas las exportaciones o que estén controlados por el gobierno\nde estos; o (b) no figura en la lista de ciudadanos especialmente\ndesignados (Specially Designated Nationals) del Departamento del\nTesoro de EE. UU. ni en las listas de personas físicas y jurídicas\n(Denied Persons List y Entity List) del Departamento de Comercio de\nEE. UU con las que esté prohibido el mantenimiento de actividades\ncomerciales, ni actúa en representación de ninguna persona física o\njurídica que figure en ellas; y (2) no permitirá que el Software se\nutilice para fines prohibidos por la legislación estadounidense,\nincluidos, entre otros, el desarrollo, el diseño, la fabricación o la\nproducción de misiles o armas nucleares, químicas o biológicas. El\nSoftware y la documentación que lo acompaña se consideran,\nrespectivamente, "software informático comercial" y "documentación\nde software informático comercial", tal y como se definen dichos\nconceptos en el apartado 227.7202 del Suplemento a la Normativa\nde Adquisiciones de Defensa de la Administración Federal de EE.UU.\n(Defense Federal Acquisition Regulations Supplement, DFARS) y en\nel apartado 12.212(b) de la Normativa de Adquisiciones de la\nAdministración Federal de EE.UU. (Federal Acquisition Regulations,\nFAR), según corresponda. Cualquier uso, modificación, reproducción,\npublicación, ejecución, visualización o divulgación del Software y la\ndocumentación por parte del gobierno estadounidense se regirán\núnicamente por los términos y condiciones de este EULA.\n\n12.6\tConstrucción.  Los títulos de las secciones de este EULA solo\npretenden facilitar la lectura y no deben usarse para interpretar este\nEULA. En este EULA, la palabra \'incluyendo\' significa "incluyendo, a\ntítulo meramente informativo".\n\n12.7\tLegislación aplicable.  Este EULA se rige por las leyes del Estado\nde California, Estados Unidos (excepto las normas de conflicto de\nleyes) y por las leyes federales de Estados Unidos. En la medida en\nque lo permita le ley, los tribunales situados en el Condado de Santa\nClara, California serán la jurisdicción exclusiva para las disputas que\npuedan surgir en conexión con este EULA. La Convención de las\nNaciones Unidas sobre la Compraventa Internacional de Mercancías\nno será de aplicación.\n\n12.8\tTraducción.  Esta versión que no está en inglés del EULA se le\nproporciona a Usted como una cortesía, y su uso del Software se\nrige por la versión inglesa del EULA, publicada en\nwww.vmware.com/download/eula.\n\n12.9\tDerechos de terceros.  Salvo que se establezca expresamente en\neste EULA, este EULA no otorga derechos a nadie que no constituya\nuna parte de este, y nadie que no constituya una parte de este EULA\npodrá aplicar ninguna de sus condiciones o fundamentarse en\nninguna exclusión o limitación que este contenga.\n\n12.10\tOrden de precedencia.  En caso de conflicto o de incoherencia\nentre la Guía del producto, este EULA y el Pedido, se aplicará el\nsiguiente orden de precedencia:  (a) la Guía del producto, (b) este\nEULA y (c) el Pedido. En caso de incoherencia entre este EULA y un\nPedido, las condiciones de este EULA sustituirán y tendrán prioridad\nsobre los términos y condiciones adicionales o que entren en\nconflicto de cualquier Pedido, reconocimiento o confirmación o\ncualquier otro documento emitido por Usted.\n\n12.11\tAcuerdo íntegro.  Este EULA, incluidos los Pedidos aceptados y\ncualquier enmienda de este, y la Guía del producto contienen el\nacuerdo íntegro de las partes con respecto al objeto de este EULA y\nsustituyen a cualquier comunicado, manifestación, propuesta,\ncompromiso y acuerdo anterior o actual, ya sea oral o escrito, entre\nlas partes en relación con el objeto de estos.  Este EULA solo se\npodrá modificar por escrito y con la firma de los representantes\nautorizados de ambas partes.\n\n12.12\tDatos de contacto.  Si desea hacer una consulta legal o ponerse\nen contacto con nosotros por correo por cualquier otra razón,\nescríbanos a:  VMware, Inc., 3401 Hillview Avenue, Palo Alto,\nCalifornia 94304, Estados Unidos, Atención:  Departamento jurídico.'
+   ],
+   ovfSection = (vim.vApp.OvfSectionInfo) [],
+   ovfEnvironmentTransport = (str) [
+      'com.vmware.guestInfo'
+   ],
+   installBootRequired = false,
+   installBootStopDelay = 0
+}, 'vAssertsEnabled': False, 'changeTrackingEnabled': True, 'firmware': 'bios', 'maxMksConnections': 40, 'guestAutoLockEnabled': False, 'managedBy': None, 'memoryReservationLockedToMax': False, 'initialOverhead': (vim.vm.ConfigInfo.OverheadInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   initialMemoryReservation = 99667968,
+   initialSwapReservation = 173740032
+}, 'nestedHVEnabled': False, 'vPMCEnabled': False, 'scheduledHardwareUpgradeInfo': (vim.vm.ScheduledHardwareUpgradeInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   upgradePolicy = 'never',
+   versionKey = <unset>,
+   scheduledHardwareUpgradeStatus = 'none',
+   fault = <unset>
+}, 'forkConfigInfo': (vim.vm.ForkConfigInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   parentEnabled = false,
+   childForkGroupId = <unset>,
+   parentForkGroupId = <unset>,
+   childType = <unset>
+}, 'vFlashCacheReservation': 0, 'vmxConfigChecksum': b'\x8b\xfdo\xa47\x11\xa0\n\x02\x1a\x02+*\xfa\n\xb8V\xd3\xcc\x1a', 'messageBusTunnelEnabled': False, 'vmStorageObjectId': None, 'swapStorageObjectId': None, 'keyId': None, 'guestIntegrityInfo': None, 'migrateEncryption': 'opportunistic', 'sgxInfo': None, 'contentLibItemInfo': None, 'ftEncryptionMode': None, 'guestMonitoringModeInfo': None, 'sevEnabled': None, 'numaInfo': None, 'pmemFailoverEnabled': None, 'vmxStatsCollectionEnabled': None, 'vmOpNotificationToAppEnabled': None, 'vmOpNotificationTimeout': None, 'deviceSwap': None, 'pmem': None, 'deviceGroups': None}

@@ -1,0 +1,992 @@
+{'dynamicType': None, 'dynamicProperty': (vmodl.DynamicProperty) [], 'changeVersion': '2023-03-17T04:59:59.041961Z', 'modified': datetime.datetime(1970, 1, 1, 0, 0, tzinfo=<pyVmomi.Iso8601.TZInfo object at 0x000002EE14A49410>), 'name': 'virtual-rpa01', 'guestFullName': 'Microsoft Windows 10 (64-bit)', 'version': 'vmx-11', 'uuid': '421838d8-4123-2fb2-b5bb-15b20ff79306', 'createDate': datetime.datetime(2022, 8, 10, 19, 0, 0, 180000, tzinfo=<pyVmomi.Iso8601.TZInfo object at 0x000002EE14A49410>), 'instanceUuid': '50180a5d-0a56-0838-7b72-ec103f92ee37', 'npivNodeWorldWideName': (long) [], 'npivPortWorldWideName': (long) [], 'npivWorldWideNameType': None, 'npivDesiredNodeWwns': None, 'npivDesiredPortWwns': None, 'npivTemporaryDisabled': True, 'npivOnNonRdmDisks': None, 'locationId': '564dc6bb-ed74-a029-4749-e369fb69d483', 'template': False, 'guestId': 'windows9_64Guest', 'alternateGuestName': '', 'annotation': 'Desktop para el RPA', 'files': (vim.vm.FileInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   vmPathName = '[OSOL-VM-DMZ01] virtual-rpa01/virtual-rpa01.vmx',
+   snapshotDirectory = '[OSOL-VM-DMZ01] virtual-rpa01/',
+   suspendDirectory = '[OSOL-VM-DMZ01] virtual-rpa01/',
+   logDirectory = '[OSOL-VM-DMZ01] virtual-rpa01/',
+   ftMetadataDirectory = <unset>
+}, 'tools': (vim.vm.ToolsConfigInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   toolsVersion = 10341,
+   toolsInstallType = <unset>,
+   afterPowerOn = true,
+   afterResume = true,
+   beforeGuestStandby = true,
+   beforeGuestShutdown = true,
+   beforeGuestReboot = <unset>,
+   toolsUpgradePolicy = 'manual',
+   pendingCustomization = <unset>,
+   customizationKeyId = <unset>,
+   syncTimeWithHostAllowed = <unset>,
+   syncTimeWithHost = false,
+   lastInstallInfo = (vim.vm.ToolsConfigInfo.ToolsLastInstallInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      counter = 3,
+      fault = <unset>
+   }
+}, 'flags': (vim.vm.FlagInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   disableAcceleration = false,
+   enableLogging = true,
+   useToe = false,
+   runWithDebugInfo = false,
+   monitorType = 'release',
+   htSharing = 'any',
+   snapshotDisabled = false,
+   snapshotLocked = false,
+   diskUuidEnabled = false,
+   virtualMmuUsage = 'automatic',
+   virtualExecUsage = 'hvAuto',
+   snapshotPowerOffBehavior = 'powerOff',
+   recordReplayEnabled = false,
+   faultToleranceType = 'unset',
+   cbrcCacheEnabled = <unset>,
+   vvtdEnabled = <unset>,
+   vbsEnabled = <unset>
+}, 'consolePreferences': None, 'defaultPowerOps': (vim.vm.DefaultPowerOpInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   powerOffType = 'soft',
+   suspendType = 'hard',
+   resetType = 'soft',
+   defaultPowerOffType = 'soft',
+   defaultSuspendType = 'hard',
+   defaultResetType = 'soft',
+   standbyAction = 'checkpoint'
+}, 'rebootPowerOff': None, 'hardware': (vim.vm.VirtualHardware) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   numCPU = 4,
+   numCoresPerSocket = 2,
+   autoCoresPerSocket = <unset>,
+   memoryMB = 16384,
+   virtualICH7MPresent = false,
+   virtualSMCPresent = false,
+   device = (vim.vm.device.VirtualDevice) [
+      (vim.vm.device.VirtualIDEController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 200,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'IDE 0',
+            summary = 'IDE 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) []
+      },
+      (vim.vm.device.VirtualIDEController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 201,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'IDE 1',
+            summary = 'IDE 1'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 1,
+         device = (int) []
+      },
+      (vim.vm.device.VirtualPS2Controller) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 300,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'PS2 controller 0',
+            summary = 'PS2 controller 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            600,
+            700
+         ]
+      },
+      (vim.vm.device.VirtualPCIController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 100,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'PCI controller 0',
+            summary = 'PCI controller 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            500,
+            12000,
+            14000,
+            1000,
+            15000,
+            4000
+         ]
+      },
+      (vim.vm.device.VirtualSIOController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 400,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'SIO controller 0',
+            summary = 'SIO controller 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) []
+      },
+      (vim.vm.device.VirtualKeyboard) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 600,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Keyboard ',
+            summary = 'Keyboard'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 300,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>
+      },
+      (vim.vm.device.VirtualPointingDevice) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 700,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Pointing device',
+            summary = 'Pointing device; Device'
+         },
+         backing = (vim.vm.device.VirtualPointingDevice.DeviceBackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            deviceName = '',
+            useAutoDetect = false,
+            hostPointingDevice = 'autodetect'
+         },
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 300,
+         unitNumber = 1,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>
+      },
+      (vim.vm.device.VirtualVideoCard) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 500,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Video card ',
+            summary = 'Video card'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 100,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         videoRamSizeInKB = 8192,
+         numDisplays = 1,
+         useAutoDetect = false,
+         enable3DSupport = false,
+         use3dRenderer = 'automatic',
+         graphicsMemorySizeInKB = 262144
+      },
+      (vim.vm.device.VirtualVMCIDevice) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 12000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'VMCI device',
+            summary = 'Device on the virtual machine PCI bus that provides support for the virtual machine communication interface'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 32
+         },
+         controllerKey = 100,
+         unitNumber = 17,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         id = 267883270,
+         allowUnrestrictedCommunication = false,
+         filterEnable = true,
+         filterInfo = <unset>
+      },
+      (vim.vm.device.VirtualUSBXHCIController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 14000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'USB xHCI controller ',
+            summary = 'USB xHCI controller'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 224
+         },
+         controllerKey = 100,
+         unitNumber = 23,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [],
+         autoConnectDevices = false
+      },
+      (vim.vm.device.VirtualLsiLogicSASController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 1000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'SCSI controller 0',
+            summary = 'LSI Logic SAS'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 160
+         },
+         controllerKey = 100,
+         unitNumber = 3,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            2000
+         ],
+         hotAddRemove = true,
+         sharedBus = 'noSharing',
+         scsiCtlrUnitNumber = 7
+      },
+      (vim.vm.device.VirtualAHCIController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 15000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'SATA controller 0',
+            summary = 'AHCI'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 33
+         },
+         controllerKey = 100,
+         unitNumber = 24,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            16000
+         ]
+      },
+      (vim.vm.device.VirtualCdrom) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 16000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'CD/DVD drive 1',
+            summary = 'ISO [OSOL-VM-vSphereReplication01] ISO/Windows10ProOLP64bits.iso'
+         },
+         backing = (vim.vm.device.VirtualCdrom.IsoBackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            fileName = '[OSOL-VM-vSphereReplication01] ISO/Windows10ProOLP64bits.iso',
+            datastore = 'vim.Datastore:datastore-30',
+            backingObjectId = <unset>
+         },
+         connectable = (vim.vm.device.VirtualDevice.ConnectInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            migrateConnect = <unset>,
+            startConnected = false,
+            allowGuestControl = true,
+            connected = false,
+            status = 'ok'
+         },
+         slotInfo = <unset>,
+         controllerKey = 15000,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>
+      },
+      (vim.vm.device.VirtualDisk) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 2000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Hard disk 1',
+            summary = '83,886,080 KB'
+         },
+         backing = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            fileName = '[OSOL-VM-DMZ01] virtual-rpa01/virtual-rpa01-000001.vmdk',
+            datastore = 'vim.Datastore:datastore-22',
+            backingObjectId = '',
+            diskMode = 'persistent',
+            split = false,
+            writeThrough = false,
+            thinProvisioned = false,
+            eagerlyScrub = <unset>,
+            uuid = '6000C290-428b-d3d7-2cfe-6920a64b3efe',
+            contentId = 'd62db404c7c8d67d4aa340b159fc7a1d',
+            changeId = <unset>,
+            parent = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               fileName = '[OSOL-VM-DMZ01] virtual-rpa01/virtual-rpa01.vmdk',
+               datastore = 'vim.Datastore:datastore-22',
+               backingObjectId = '',
+               diskMode = 'persistent',
+               split = <unset>,
+               writeThrough = <unset>,
+               thinProvisioned = false,
+               eagerlyScrub = <unset>,
+               uuid = '6000C290-428b-d3d7-2cfe-6920a64b3efe',
+               contentId = 'd1c60607481c13b2b064e2b880fed8fc',
+               changeId = <unset>,
+               parent = <unset>,
+               deltaDiskFormat = <unset>,
+               digestEnabled = false,
+               deltaGrainSize = <unset>,
+               deltaDiskFormatVariant = <unset>,
+               sharing = <unset>,
+               keyId = <unset>
+            },
+            deltaDiskFormat = 'redoLogFormat',
+            digestEnabled = false,
+            deltaGrainSize = <unset>,
+            deltaDiskFormatVariant = 'vmfsSparseVariant',
+            sharing = 'sharingNone',
+            keyId = <unset>
+         },
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 1000,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         capacityInKB = 83886080,
+         capacityInBytes = 85899345920,
+         shares = (vim.SharesInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            shares = 1000,
+            level = 'normal'
+         },
+         storageIOAllocation = (vim.StorageResourceManager.IOAllocationInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            limit = -1,
+            shares = (vim.SharesInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               shares = 1000,
+               level = 'normal'
+            },
+            reservation = 0
+         },
+         diskObjectId = '59-2000',
+         vFlashCacheConfigInfo = <unset>,
+         iofilter = (str) [],
+         vDiskId = <unset>,
+         nativeUnmanagedLinkedClone = <unset>,
+         independentFilters = (vim.vm.BaseIndependentFilterSpec) []
+      },
+      (vim.vm.device.VirtualVmxnet3) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 4000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Network adapter 1',
+            summary = 'EstacionesSOL'
+         },
+         backing = (vim.vm.device.VirtualEthernetCard.NetworkBackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            deviceName = 'EstacionesSOL',
+            useAutoDetect = false,
+            network = 'vim.Network:network-1577',
+            inPassthroughMode = <unset>
+         },
+         connectable = (vim.vm.device.VirtualDevice.ConnectInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            migrateConnect = <unset>,
+            startConnected = true,
+            allowGuestControl = true,
+            connected = true,
+            status = 'ok'
+         },
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 192
+         },
+         controllerKey = 100,
+         unitNumber = 7,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         addressType = 'assigned',
+         macAddress = '00:50:56:98:89:9e',
+         wakeOnLanEnabled = true,
+         resourceAllocation = (vim.vm.device.VirtualEthernetCard.ResourceAllocation) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            reservation = 0,
+            share = (vim.SharesInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               shares = 50,
+               level = 'normal'
+            },
+            limit = -1
+         },
+         externalId = <unset>,
+         uptCompatibilityEnabled = true,
+         uptv2Enabled = <unset>
+      }
+   ],
+   motherboardLayout = <unset>,
+   simultaneousThreads = <unset>
+}, 'vcpuConfig': (vim.vm.VcpuConfig) [], 'cpuAllocation': (vim.ResourceAllocationInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   reservation = 0,
+   expandableReservation = false,
+   limit = -1,
+   shares = (vim.SharesInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      shares = 4000,
+      level = 'normal'
+   },
+   overheadLimit = <unset>
+}, 'memoryAllocation': (vim.ResourceAllocationInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   reservation = 0,
+   expandableReservation = false,
+   limit = -1,
+   shares = (vim.SharesInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      shares = 163840,
+      level = 'normal'
+   },
+   overheadLimit = 143
+}, 'latencySensitivity': (vim.LatencySensitivity) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   level = 'normal',
+   sensitivity = <unset>
+}, 'memoryHotAddEnabled': False, 'cpuHotAddEnabled': False, 'cpuHotRemoveEnabled': False, 'hotPlugMemoryLimit': 16384, 'hotPlugMemoryIncrementSize': 0, 'cpuAffinity': None, 'memoryAffinity': None, 'networkShaper': None, 'extraConfig': (vim.option.OptionValue) [
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'sched.scsi0:0.throughputCap',
+      value = 'off'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'tools.guest.desktop.autolock',
+      value = 'false'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'nvram',
+      value = 'virtual-rpa01.nvram'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge0.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'svga.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'hpet0.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'sched.cpu.latencySensitivity',
+      value = 'normal'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'virtualHW.productCompatibility',
+      value = 'hosted'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'replay.supported',
+      value = 'false'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge0.pciSlotNumber',
+      value = '17'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.pciSlotNumber',
+      value = '21'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.pciSlotNumber',
+      value = '22'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.pciSlotNumber',
+      value = '23'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.pciSlotNumber',
+      value = '24'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'scsi0.pciSlotNumber',
+      value = '160'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'ethernet0.pciSlotNumber',
+      value = '192'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'usb_xhci.pciSlotNumber',
+      value = '224'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmci0.pciSlotNumber',
+      value = '32'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'sata0.pciSlotNumber',
+      value = '33'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'scsi0.sasWWID',
+      value = '50 05 05 68 41 23 2f b0'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vm.genidX',
+      value = '411116735832609321'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'monitor.phys_bits_used',
+      value = '42'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmotion.checkpointFBSize',
+      value = '4194304'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmotion.checkpointSVGAPrimarySize',
+      value = '8388608'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'softPowerOff',
+      value = 'false'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'toolsInstallManager.lastInstallError',
+      value = '0'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'svga.guestBackedPrimaryAware',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'tools.remindInstall',
+      value = 'false'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'toolsInstallManager.updateCounter',
+      value = '3'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'cpuid.coresPerSocket',
+      value = '2'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'numa.autosize.vcpu.maxPerVirtualNode',
+      value = '4'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'numa.autosize.cookie',
+      value = '40001'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vm.genid',
+      value = '5555685080602210451'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'usb_xhci:4.present',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'usb_xhci:4.deviceType',
+      value = 'hid'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'usb_xhci:4.port',
+      value = '4'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'usb_xhci:4.parent',
+      value = '-1'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.driver.vmci.version',
+      value = '9.8.18.0'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.driver.vmxnet3.version',
+      value = '1.9.12.0'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.buildNumber',
+      value = '10430147'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.description',
+      value = 'VMware Tools 10.3.5 build 10430147'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.versionNumber',
+      value = '10341'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.versionString',
+      value = '10.3.5'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'SCSI0:0.ctkEnabled',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'ctkEnabled',
+      value = 'true'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'sched.swap.derivedName',
+      value = '/vmfs/volumes/57e76356-3bbd9e8d-395e-b8ca3af36407/virtual-rpa01/virtual-rpa01-3c614ffa.vswp'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'replay.filename',
+      value = ''
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'scsi0:0.redo',
+      value = ''
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmware.tools.internalversion',
+      value = '10341'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmware.tools.requiredversion',
+      value = '9541'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'migrate.hostLogState',
+      value = 'success'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'migrate.migrationId',
+      value = '449548203550'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'migrate.hostLog',
+      value = 'virtual-rpa01-2ea4d178.hlog'
+   }
+], 'cpuFeatureMask': (vim.host.CpuIdInfo) [], 'datastoreUrl': (vim.vm.ConfigInfo.DatastoreUrlPair) [
+   (vim.vm.ConfigInfo.DatastoreUrlPair) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      name = 'OSOL-VM-DMZ01',
+      url = '/vmfs/volumes/57e76356-3bbd9e8d-395e-b8ca3af36407'
+   },
+   (vim.vm.ConfigInfo.DatastoreUrlPair) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      name = 'OSOL-VM-vSphereReplication01',
+      url = '/vmfs/volumes/5d6e9037-cedae590-18d8-d4ae528ebcfe'
+   }
+], 'swapPlacement': 'inherit', 'bootOptions': (vim.vm.BootOptions) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   bootDelay = 0,
+   enterBIOSSetup = false,
+   efiSecureBootEnabled = <unset>,
+   bootRetryEnabled = false,
+   bootRetryDelay = 10000,
+   bootOrder = (vim.vm.BootOptions.BootableDevice) [],
+   networkBootProtocol = 'ipv4'
+}, 'ftInfo': None, 'repConfig': None, 'vAppConfig': None, 'vAssertsEnabled': False, 'changeTrackingEnabled': True, 'firmware': 'bios', 'maxMksConnections': 40, 'guestAutoLockEnabled': False, 'managedBy': None, 'memoryReservationLockedToMax': False, 'initialOverhead': (vim.vm.ConfigInfo.OverheadInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   initialMemoryReservation = 146837504,
+   initialSwapReservation = 195235840
+}, 'nestedHVEnabled': False, 'vPMCEnabled': False, 'scheduledHardwareUpgradeInfo': (vim.vm.ScheduledHardwareUpgradeInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   upgradePolicy = 'never',
+   versionKey = <unset>,
+   scheduledHardwareUpgradeStatus = 'none',
+   fault = <unset>
+}, 'forkConfigInfo': (vim.vm.ForkConfigInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   parentEnabled = false,
+   childForkGroupId = <unset>,
+   parentForkGroupId = <unset>,
+   childType = <unset>
+}, 'vFlashCacheReservation': 0, 'vmxConfigChecksum': b'Zh\x1a\x17L9h\xe9\x00\xbefJaX\x07\xae\xa3\x1a\r\x90', 'messageBusTunnelEnabled': False, 'vmStorageObjectId': None, 'swapStorageObjectId': None, 'keyId': None, 'guestIntegrityInfo': None, 'migrateEncryption': 'opportunistic', 'sgxInfo': None, 'contentLibItemInfo': None, 'ftEncryptionMode': None, 'guestMonitoringModeInfo': None, 'sevEnabled': None, 'numaInfo': None, 'pmemFailoverEnabled': None, 'vmxStatsCollectionEnabled': None, 'vmOpNotificationToAppEnabled': None, 'vmOpNotificationTimeout': None, 'deviceSwap': None, 'pmem': None, 'deviceGroups': None}

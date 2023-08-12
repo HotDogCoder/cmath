@@ -1,0 +1,1038 @@
+{'dynamicType': None, 'dynamicProperty': (vmodl.DynamicProperty) [], 'changeVersion': '2023-03-09T12:55:51.123152Z', 'modified': datetime.datetime(1970, 1, 1, 0, 0, tzinfo=<pyVmomi.Iso8601.TZInfo object at 0x000002EE14A49410>), 'name': 'SRV-ZABBIX', 'guestFullName': 'Ubuntu Linux (64-bit)', 'version': 'vmx-13', 'uuid': '42188f41-32bf-087a-df0c-57a7a9f66421', 'createDate': datetime.datetime(2022, 12, 3, 6, 35, 32, 808455, tzinfo=<pyVmomi.Iso8601.TZInfo object at 0x000002EE14A49410>), 'instanceUuid': '50187a5c-f9b0-05d7-e084-2081dfc72522', 'npivNodeWorldWideName': (long) [], 'npivPortWorldWideName': (long) [], 'npivWorldWideNameType': None, 'npivDesiredNodeWwns': None, 'npivDesiredPortWwns': None, 'npivTemporaryDisabled': True, 'npivOnNonRdmDisks': None, 'locationId': '564d389f-0c76-4bb3-6e47-48fe111efb64', 'template': False, 'guestId': 'ubuntu64Guest', 'alternateGuestName': '', 'annotation': '', 'files': (vim.vm.FileInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   vmPathName = '[NSOL-VM-Replica02] SRV-ZABBIX/SRV-ZABBIX.vmx',
+   snapshotDirectory = '[NSOL-VM-Replica02] SRV-ZABBIX/',
+   suspendDirectory = '[NSOL-VM-Replica02] SRV-ZABBIX/',
+   logDirectory = '[NSOL-VM-Replica02] SRV-ZABBIX/',
+   ftMetadataDirectory = <unset>
+}, 'tools': (vim.vm.ToolsConfigInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   toolsVersion = 11360,
+   toolsInstallType = 'guestToolsTypeOpenVMTools',
+   afterPowerOn = true,
+   afterResume = true,
+   beforeGuestStandby = true,
+   beforeGuestShutdown = true,
+   beforeGuestReboot = <unset>,
+   toolsUpgradePolicy = 'manual',
+   pendingCustomization = <unset>,
+   customizationKeyId = <unset>,
+   syncTimeWithHostAllowed = <unset>,
+   syncTimeWithHost = false,
+   lastInstallInfo = (vim.vm.ToolsConfigInfo.ToolsLastInstallInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      counter = 1,
+      fault = <unset>
+   }
+}, 'flags': (vim.vm.FlagInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   disableAcceleration = false,
+   enableLogging = true,
+   useToe = false,
+   runWithDebugInfo = false,
+   monitorType = 'release',
+   htSharing = 'any',
+   snapshotDisabled = false,
+   snapshotLocked = false,
+   diskUuidEnabled = false,
+   virtualMmuUsage = 'automatic',
+   virtualExecUsage = 'hvAuto',
+   snapshotPowerOffBehavior = 'powerOff',
+   recordReplayEnabled = false,
+   faultToleranceType = 'unset',
+   cbrcCacheEnabled = false,
+   vvtdEnabled = <unset>,
+   vbsEnabled = <unset>
+}, 'consolePreferences': None, 'defaultPowerOps': (vim.vm.DefaultPowerOpInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   powerOffType = 'soft',
+   suspendType = 'hard',
+   resetType = 'soft',
+   defaultPowerOffType = 'soft',
+   defaultSuspendType = 'hard',
+   defaultResetType = 'soft',
+   standbyAction = 'checkpoint'
+}, 'rebootPowerOff': None, 'hardware': (vim.vm.VirtualHardware) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   numCPU = 8,
+   numCoresPerSocket = 1,
+   autoCoresPerSocket = <unset>,
+   memoryMB = 16384,
+   virtualICH7MPresent = false,
+   virtualSMCPresent = false,
+   device = (vim.vm.device.VirtualDevice) [
+      (vim.vm.device.VirtualIDEController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 200,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'IDE 0',
+            summary = 'IDE 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) []
+      },
+      (vim.vm.device.VirtualIDEController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 201,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'IDE 1',
+            summary = 'IDE 1'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 1,
+         device = (int) []
+      },
+      (vim.vm.device.VirtualPS2Controller) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 300,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'PS2 controller 0',
+            summary = 'PS2 controller 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            600,
+            700
+         ]
+      },
+      (vim.vm.device.VirtualPCIController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 100,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'PCI controller 0',
+            summary = 'PCI controller 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            500,
+            12000,
+            1000,
+            15000,
+            4000
+         ]
+      },
+      (vim.vm.device.VirtualSIOController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 400,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'SIO controller 0',
+            summary = 'SIO controller 0'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = <unset>,
+         unitNumber = <unset>,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) []
+      },
+      (vim.vm.device.VirtualKeyboard) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 600,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Keyboard ',
+            summary = 'Keyboard'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 300,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>
+      },
+      (vim.vm.device.VirtualPointingDevice) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 700,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Pointing device',
+            summary = 'Pointing device; Device'
+         },
+         backing = (vim.vm.device.VirtualPointingDevice.DeviceBackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            deviceName = '',
+            useAutoDetect = false,
+            hostPointingDevice = 'autodetect'
+         },
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 300,
+         unitNumber = 1,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>
+      },
+      (vim.vm.device.VirtualVideoCard) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 500,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Video card ',
+            summary = 'Video card'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 100,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         videoRamSizeInKB = 4096,
+         numDisplays = 1,
+         useAutoDetect = false,
+         enable3DSupport = false,
+         use3dRenderer = 'automatic',
+         graphicsMemorySizeInKB = 262144
+      },
+      (vim.vm.device.VirtualVMCIDevice) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 12000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'VMCI device',
+            summary = 'Device on the virtual machine PCI bus that provides support for the virtual machine communication interface'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 32
+         },
+         controllerKey = 100,
+         unitNumber = 17,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         id = -1443470303,
+         allowUnrestrictedCommunication = false,
+         filterEnable = true,
+         filterInfo = <unset>
+      },
+      (vim.vm.device.VirtualLsiLogicController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 1000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'SCSI controller 0',
+            summary = 'LSI Logic'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 16
+         },
+         controllerKey = 100,
+         unitNumber = 3,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            2000,
+            2001
+         ],
+         hotAddRemove = true,
+         sharedBus = 'noSharing',
+         scsiCtlrUnitNumber = 7
+      },
+      (vim.vm.device.VirtualAHCIController) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 15000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'SATA controller 0',
+            summary = 'AHCI'
+         },
+         backing = <unset>,
+         connectable = <unset>,
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 33
+         },
+         controllerKey = 100,
+         unitNumber = 24,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         busNumber = 0,
+         device = (int) [
+            16000
+         ]
+      },
+      (vim.vm.device.VirtualCdrom) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 16000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'CD/DVD drive 1',
+            summary = 'Remote ATAPI'
+         },
+         backing = (vim.vm.device.VirtualCdrom.RemoteAtapiBackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            deviceName = '',
+            useAutoDetect = false
+         },
+         connectable = (vim.vm.device.VirtualDevice.ConnectInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            migrateConnect = <unset>,
+            startConnected = false,
+            allowGuestControl = true,
+            connected = false,
+            status = 'untried'
+         },
+         slotInfo = <unset>,
+         controllerKey = 15000,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>
+      },
+      (vim.vm.device.VirtualDisk) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 2000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Hard disk 1',
+            summary = '104,857,600 KB'
+         },
+         backing = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            fileName = '[NSOL-VM-Replica02] SRV-ZABBIX/SRV-ZABBIX-000003.vmdk',
+            datastore = 'vim.Datastore:datastore-120',
+            backingObjectId = '',
+            diskMode = 'persistent',
+            split = false,
+            writeThrough = false,
+            thinProvisioned = false,
+            eagerlyScrub = <unset>,
+            uuid = '6000C29c-6dce-b468-e6f5-be84666ce3d8',
+            contentId = 'b9fc9869c7d884b8a761a858cb7e6971',
+            changeId = <unset>,
+            parent = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               fileName = '[NSOL-VM-Replica02] SRV-ZABBIX/SRV-ZABBIX-000002.vmdk',
+               datastore = 'vim.Datastore:datastore-120',
+               backingObjectId = '',
+               diskMode = 'persistent',
+               split = <unset>,
+               writeThrough = <unset>,
+               thinProvisioned = false,
+               eagerlyScrub = <unset>,
+               uuid = '6000C29c-6dce-b468-e6f5-be84666ce3d8',
+               contentId = '26031e9fd5811f2bc3dfe3556dc51e99',
+               changeId = <unset>,
+               parent = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+                  dynamicType = <unset>,
+                  dynamicProperty = (vmodl.DynamicProperty) [],
+                  fileName = '[NSOL-VM-Replica02] SRV-ZABBIX/SRV-ZABBIX-000001.vmdk',
+                  datastore = 'vim.Datastore:datastore-120',
+                  backingObjectId = '',
+                  diskMode = 'persistent',
+                  split = <unset>,
+                  writeThrough = <unset>,
+                  thinProvisioned = false,
+                  eagerlyScrub = <unset>,
+                  uuid = '6000C29c-6dce-b468-e6f5-be84666ce3d8',
+                  contentId = '40e85c768afb65cff1f20e77e162410d',
+                  changeId = <unset>,
+                  parent = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+                     dynamicType = <unset>,
+                     dynamicProperty = (vmodl.DynamicProperty) [],
+                     fileName = '[NSOL-VM-Replica02] SRV-ZABBIX/SRV-ZABBIX.vmdk',
+                     datastore = 'vim.Datastore:datastore-120',
+                     backingObjectId = '',
+                     diskMode = 'persistent',
+                     split = <unset>,
+                     writeThrough = <unset>,
+                     thinProvisioned = false,
+                     eagerlyScrub = <unset>,
+                     uuid = '6000C29c-6dce-b468-e6f5-be84666ce3d8',
+                     contentId = '31c55ac623b9ec8241f40211766bb2d7',
+                     changeId = <unset>,
+                     parent = <unset>,
+                     deltaDiskFormat = <unset>,
+                     digestEnabled = false,
+                     deltaGrainSize = <unset>,
+                     deltaDiskFormatVariant = <unset>,
+                     sharing = <unset>,
+                     keyId = <unset>
+                  },
+                  deltaDiskFormat = 'redoLogFormat',
+                  digestEnabled = false,
+                  deltaGrainSize = <unset>,
+                  deltaDiskFormatVariant = 'vmfsSparseVariant',
+                  sharing = <unset>,
+                  keyId = <unset>
+               },
+               deltaDiskFormat = 'redoLogFormat',
+               digestEnabled = false,
+               deltaGrainSize = <unset>,
+               deltaDiskFormatVariant = 'vmfsSparseVariant',
+               sharing = <unset>,
+               keyId = <unset>
+            },
+            deltaDiskFormat = 'redoLogFormat',
+            digestEnabled = false,
+            deltaGrainSize = <unset>,
+            deltaDiskFormatVariant = 'vmfsSparseVariant',
+            sharing = 'sharingNone',
+            keyId = <unset>
+         },
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 1000,
+         unitNumber = 0,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         capacityInKB = 104857600,
+         capacityInBytes = 107374182400,
+         shares = (vim.SharesInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            shares = 1000,
+            level = 'normal'
+         },
+         storageIOAllocation = (vim.StorageResourceManager.IOAllocationInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            limit = -1,
+            shares = (vim.SharesInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               shares = 1000,
+               level = 'normal'
+            },
+            reservation = 0
+         },
+         diskObjectId = '68-2000',
+         vFlashCacheConfigInfo = <unset>,
+         iofilter = (str) [],
+         vDiskId = <unset>,
+         nativeUnmanagedLinkedClone = <unset>,
+         independentFilters = (vim.vm.BaseIndependentFilterSpec) []
+      },
+      (vim.vm.device.VirtualDisk) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 2001,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Hard disk 2',
+            summary = '314,572,800 KB'
+         },
+         backing = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            fileName = '[NSOL-VM-Replica02] SRV-ZABBIX/SRV-ZABBIX_1-000003.vmdk',
+            datastore = 'vim.Datastore:datastore-120',
+            backingObjectId = '',
+            diskMode = 'persistent',
+            split = false,
+            writeThrough = false,
+            thinProvisioned = false,
+            eagerlyScrub = <unset>,
+            uuid = '6000C291-eaa4-fe54-5f13-438adc658d10',
+            contentId = 'a9a064d5278580923962a6d40f525227',
+            changeId = <unset>,
+            parent = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               fileName = '[NSOL-VM-Replica02] SRV-ZABBIX/SRV-ZABBIX_1-000002.vmdk',
+               datastore = 'vim.Datastore:datastore-120',
+               backingObjectId = '',
+               diskMode = 'persistent',
+               split = <unset>,
+               writeThrough = <unset>,
+               thinProvisioned = false,
+               eagerlyScrub = <unset>,
+               uuid = '6000C291-eaa4-fe54-5f13-438adc658d10',
+               contentId = 'a22658db32ce783b8e2a32fc01c18ce4',
+               changeId = <unset>,
+               parent = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+                  dynamicType = <unset>,
+                  dynamicProperty = (vmodl.DynamicProperty) [],
+                  fileName = '[NSOL-VM-Replica02] SRV-ZABBIX/SRV-ZABBIX_1-000001.vmdk',
+                  datastore = 'vim.Datastore:datastore-120',
+                  backingObjectId = '',
+                  diskMode = 'persistent',
+                  split = <unset>,
+                  writeThrough = <unset>,
+                  thinProvisioned = false,
+                  eagerlyScrub = <unset>,
+                  uuid = '6000C291-eaa4-fe54-5f13-438adc658d10',
+                  contentId = '05d73bac3d1c030d150682e894e4bd2e',
+                  changeId = <unset>,
+                  parent = (vim.vm.device.VirtualDisk.FlatVer2BackingInfo) {
+                     dynamicType = <unset>,
+                     dynamicProperty = (vmodl.DynamicProperty) [],
+                     fileName = '[NSOL-VM-Replica02] SRV-ZABBIX/SRV-ZABBIX_1.vmdk',
+                     datastore = 'vim.Datastore:datastore-120',
+                     backingObjectId = '',
+                     diskMode = 'persistent',
+                     split = <unset>,
+                     writeThrough = <unset>,
+                     thinProvisioned = false,
+                     eagerlyScrub = <unset>,
+                     uuid = '6000C291-eaa4-fe54-5f13-438adc658d10',
+                     contentId = 'fccc7a2389fdda7ab645d7e78655ccd1',
+                     changeId = <unset>,
+                     parent = <unset>,
+                     deltaDiskFormat = <unset>,
+                     digestEnabled = false,
+                     deltaGrainSize = <unset>,
+                     deltaDiskFormatVariant = <unset>,
+                     sharing = <unset>,
+                     keyId = <unset>
+                  },
+                  deltaDiskFormat = 'redoLogFormat',
+                  digestEnabled = false,
+                  deltaGrainSize = <unset>,
+                  deltaDiskFormatVariant = 'vmfsSparseVariant',
+                  sharing = <unset>,
+                  keyId = <unset>
+               },
+               deltaDiskFormat = 'redoLogFormat',
+               digestEnabled = false,
+               deltaGrainSize = <unset>,
+               deltaDiskFormatVariant = 'vmfsSparseVariant',
+               sharing = <unset>,
+               keyId = <unset>
+            },
+            deltaDiskFormat = 'redoLogFormat',
+            digestEnabled = false,
+            deltaGrainSize = <unset>,
+            deltaDiskFormatVariant = 'vmfsSparseVariant',
+            sharing = 'sharingNone',
+            keyId = <unset>
+         },
+         connectable = <unset>,
+         slotInfo = <unset>,
+         controllerKey = 1000,
+         unitNumber = 1,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         capacityInKB = 314572800,
+         capacityInBytes = 322122547200,
+         shares = (vim.SharesInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            shares = 1000,
+            level = 'normal'
+         },
+         storageIOAllocation = (vim.StorageResourceManager.IOAllocationInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            limit = -1,
+            shares = (vim.SharesInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               shares = 1000,
+               level = 'normal'
+            },
+            reservation = 0
+         },
+         diskObjectId = '68-2001',
+         vFlashCacheConfigInfo = <unset>,
+         iofilter = (str) [],
+         vDiskId = <unset>,
+         nativeUnmanagedLinkedClone = <unset>,
+         independentFilters = (vim.vm.BaseIndependentFilterSpec) []
+      },
+      (vim.vm.device.VirtualVmxnet3) {
+         dynamicType = <unset>,
+         dynamicProperty = (vmodl.DynamicProperty) [],
+         key = 4000,
+         deviceInfo = (vim.Description) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            label = 'Network adapter 1',
+            summary = 'Production'
+         },
+         backing = (vim.vm.device.VirtualEthernetCard.NetworkBackingInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            deviceName = 'Production',
+            useAutoDetect = false,
+            network = 'vim.Network:network-34',
+            inPassthroughMode = <unset>
+         },
+         connectable = (vim.vm.device.VirtualDevice.ConnectInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            migrateConnect = <unset>,
+            startConnected = false,
+            allowGuestControl = true,
+            connected = false,
+            status = 'untried'
+         },
+         slotInfo = (vim.vm.device.VirtualDevice.PciBusSlotInfo) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            pciSlotNumber = 160
+         },
+         controllerKey = 100,
+         unitNumber = 7,
+         numaNode = <unset>,
+         deviceGroupInfo = <unset>,
+         addressType = 'assigned',
+         macAddress = '00:50:56:98:4b:e9',
+         wakeOnLanEnabled = true,
+         resourceAllocation = (vim.vm.device.VirtualEthernetCard.ResourceAllocation) {
+            dynamicType = <unset>,
+            dynamicProperty = (vmodl.DynamicProperty) [],
+            reservation = 0,
+            share = (vim.SharesInfo) {
+               dynamicType = <unset>,
+               dynamicProperty = (vmodl.DynamicProperty) [],
+               shares = 50,
+               level = 'normal'
+            },
+            limit = -1
+         },
+         externalId = <unset>,
+         uptCompatibilityEnabled = true,
+         uptv2Enabled = <unset>
+      }
+   ],
+   motherboardLayout = <unset>,
+   simultaneousThreads = <unset>
+}, 'vcpuConfig': (vim.vm.VcpuConfig) [], 'cpuAllocation': (vim.ResourceAllocationInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   reservation = 0,
+   expandableReservation = false,
+   limit = -1,
+   shares = (vim.SharesInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      shares = 8000,
+      level = 'normal'
+   },
+   overheadLimit = <unset>
+}, 'memoryAllocation': (vim.ResourceAllocationInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   reservation = 0,
+   expandableReservation = false,
+   limit = -1,
+   shares = (vim.SharesInfo) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      shares = 163840,
+      level = 'normal'
+   },
+   overheadLimit = <unset>
+}, 'latencySensitivity': (vim.LatencySensitivity) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   level = 'normal',
+   sensitivity = <unset>
+}, 'memoryHotAddEnabled': False, 'cpuHotAddEnabled': False, 'cpuHotRemoveEnabled': False, 'hotPlugMemoryLimit': None, 'hotPlugMemoryIncrementSize': None, 'cpuAffinity': None, 'memoryAffinity': None, 'networkShaper': None, 'extraConfig': (vim.option.OptionValue) [
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'tools.guest.desktop.autolock',
+      value = 'FALSE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'nvram',
+      value = 'SRV-ZABBIX.nvram'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge0.present',
+      value = 'TRUE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'svga.present',
+      value = 'TRUE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.present',
+      value = 'TRUE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.present',
+      value = 'TRUE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.present',
+      value = 'TRUE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.present',
+      value = 'TRUE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.virtualDev',
+      value = 'pcieRootPort'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.functions',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'hpet0.present',
+      value = 'TRUE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'sched.cpu.latencySensitivity',
+      value = 'normal'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'ethernet0.pciSlotNumber',
+      value = '160'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'monitor.phys_bits_used',
+      value = '43'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'numa.autosize.cookie',
+      value = '80001'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'numa.autosize.vcpu.maxPerVirtualNode',
+      value = '8'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge0.pciSlotNumber',
+      value = '17'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge4.pciSlotNumber',
+      value = '21'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge5.pciSlotNumber',
+      value = '22'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge6.pciSlotNumber',
+      value = '23'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'pciBridge7.pciSlotNumber',
+      value = '24'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'sata0.pciSlotNumber',
+      value = '33'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'scsi0.pciSlotNumber',
+      value = '16'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'softPowerOff',
+      value = 'FALSE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmci0.pciSlotNumber',
+      value = '32'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmotion.checkpointFBSize',
+      value = '4194304'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmotion.checkpointSVGAPrimarySize',
+      value = '4194304'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'svga.guestBackedPrimaryAware',
+      value = 'TRUE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'toolsInstallManager.updateCounter',
+      value = '1'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'checkpoint.vmState.readOnly',
+      value = 'FALSE'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.buildNumber',
+      value = '18090558'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.description',
+      value = 'open-vm-tools 11.3.0 build 18090558'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.versionNumber',
+      value = '11360'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.vmtools.versionString',
+      value = '11.3.0'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'guestinfo.appInfo',
+      value = '{\n"version":"1", \n"updateCounter":"130", \n"publishTime":"2023-04-10T16:05:20.084Z", \n"applications":[\n{"a":"apache2","v":""},\n{"a":"apache2","v":""},\n{"a":"kworker/u16:3","v":""},\n{"a":"kworker/u16:1-events_power_efficient","v":""},\n{"a":"apache2","v":""},\n{"a":"kworker/u16:2-events_power_efficient","v":""},\n{"a":"kworker/1:0","v":""},\n{"a":"kworker/0:1-events","v":""},\n{"a":"kworker/u16:0-events_power_efficient","v":""},\n{"a":"kworker/5:0-events","v":""},\n{"a":"kworker/2:0-cgroup_destroy","v":""},\n{"a":"kworker/7:2-events","v":""},\n{"a":"kworker/6:2-mm_percpu_wq","v":""},\n{"a":"kworker/1:2-events","v":""},\n{"a":"kworker/5:2-cgroup_destroy","v":""},\n{"a":"kworker/7:0-cgroup_destroy","v":""},\n{"a":"kworker/3:2-events","v":""},\n{"a":"kworker/0:3-cgroup_destroy","v":""},\n{"a":"kworker/3:1-events","v":""},\n{"a":"kworker/4:1-events","v":""},\n{"a":"kworker/6:0-cgroup_destroy","v":""},\n{"a":"kworker/4:3-cgroup_destroy","v":""},\n{"a":"kworker/2:1-events","v":""},\n{"a":"apache2","v":""},\n{"a":"apache2","v":""},\n{"a":"metricbeat","v":""},\n{"a":"filebeat","v":""},\n{"a":"filebeat","v":""},\n{"a":"metricbeat","v":""},\n{"a":"upowerd","v":""},\n{"a":"systemd-journald","v":""},\n{"a":"systemd-resolved","v":""},\n{"a":"systemd-networkd","v":""},\n{"a":"-bash","v":""},\n{"a":"sudo","v":""},\n{"a":"-bash","v":""},\n{"a":"systemd","v":""},\n{"a":"zabbix_server: odbc poller #1 [got 1 values in 30.036234 sec, getting values]","v":""},\n{"a":"zabbix_server: trigger housekeeper [deleted 0 problems records in 0.002719 sec, idle for 60 second(s)]","v":""},\n{"a":"zabbix_server: availability manager #1 [queued 0, processed 1 values, idle 5.015153 sec during 5.021014 sec]","v":""},\n{"a":"zabbix_server: history poller #5 [got 1 values in 0.000321 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: history poller #4 [got 0 values in 0.000080 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: history poller #3 [got 0 values in 0.000041 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: history poller #2 [got 0 values in 0.000035 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: history poller #1 [got 0 values in 0.000061 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: alert syncer [queued 0 alerts(s), flushed 0 result(s) in 0.002001 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #50 [got 0 values in 0.000072 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #49 [got 0 values in 0.000035 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #48 [got 0 values in 0.000037 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #47 [got 0 values in 0.000049 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #46 [got 0 values in 0.000047 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #45 [got 0 values in 0.000462 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #44 [got 0 values in 0.000040 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #43 [got 0 values in 0.000241 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #42 [got 0 values in 0.000032 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #41 [got 0 values in 0.000347 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #40 [got 0 values in 0.000041 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #39 [got 0 values in 0.000045 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #38 [got 0 values in 0.000042 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #37 [got 0 values in 0.000028 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #36 [got 0 values in 0.000070 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #35 [got 0 values in 0.000034 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #34 [got 0 values in 0.000040 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #33 [got 0 values in 0.000045 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #32 [got 0 values in 0.000034 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #31 [got 0 values in 0.000036 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #30 [got 0 values in 0.000078 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #29 [got 0 values in 0.000082 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #28 [got 0 values in 0.000063 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #27 [got 0 values in 0.000045 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #26 [got 0 values in 0.000062 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #25 [got 0 values in 0.000048 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #24 [got 0 values in 0.000029 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #23 [got 0 values in 0.000033 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #22 [got 0 values in 0.000036 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #21 [got 0 values in 0.000041 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #20 [got 0 values in 0.000040 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #19 [got 0 values in 0.000028 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #18 [got 0 values in 0.000030 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #17 [got 0 values in 0.000066 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #16 [got 0 values in 0.000033 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #15 [got 0 values in 0.000035 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #14 [got 0 values in 0.000028 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #13 [got 0 values in 0.000048 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #12 [got 0 values in 0.000038 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #11 [got 0 values in 0.000075 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #10 [got 0 values in 0.000040 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #9 [got 0 values in 0.000044 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #8 [got 0 values in 0.000036 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #7 [got 0 values in 0.000042 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #6 [got 0 values in 0.000025 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #5 [got 0 values in 0.000046 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #4 [got 0 values in 0.000082 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #3 [got 0 values in 0.000047 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #2 [got 0 values in 0.000044 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: icmp pinger #1 [got 0 values in 0.000032 sec, idle 4 sec]","v":""},\n{"a":"zabbix_server: trapper #10 [processed data in 0.000136 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: trapper #9 [processed data in 0.000137 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: trapper #8 [processed data in 0.000108 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: trapper #7 [processed data in 0.000109 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: trapper #6 [processed data in 0.005455 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: trapper #5 [processed data in 0.000108 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: trapper #4 [processed data in 0.004153 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: trapper #3 [processed data in 0.000096 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: trapper #2 [processed data in 0.005731 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: trapper #1 [processed data in 0.000117 sec, waiting for connection]","v":""},\n{"a":"zabbix_server: unreachable poller #100 [got 0 values in 0.000029 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #99 [got 0 values in 0.000027 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #98 [got 0 values in 0.000046 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #97 [got 0 values in 0.000027 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #96 [got 0 values in 0.000042 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #95 [got 0 values in 0.000032 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #94 [got 0 values in 0.000031 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #93 [got 0 values in 0.000045 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #92 [got 0 values in 0.000040 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #91 [got 0 values in 0.000040 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #90 [got 0 values in 0.000030 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #89 [got 0 values in 0.000445 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #88 [got 0 values in 0.000152 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #87 [got 0 values in 0.000027 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #86 [got 0 values in 0.000665 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #85 [got 0 values in 0.000248 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #84 [got 0 values in 0.000273 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #83 [got 0 values in 0.000043 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #82 [got 0 values in 0.000064 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #81 [got 0 values in 0.000043 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #80 [got 0 values in 0.000124 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #79 [got 0 values in 0.000039 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #78 [got 0 values in 0.000072 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #77 [got 0 values in 0.000028 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #76 [got 0 values in 0.000028 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #75 [got 0 values in 0.000187 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #74 [got 0 values in 0.000036 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #73 [got 0 values in 0.000176 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #72 [got 0 values in 0.000054 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #71 [got 0 values in 0.000396 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #70 [got 0 values in 0.000051 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #69 [got 0 values in 0.000028 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #68 [got 0 values in 0.000657 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #67 [got 0 values in 0.000045 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #66 [got 0 values in 0.000029 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #65 [got 0 values in 0.000204 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #64 [got 0 values in 0.000027 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #63 [got 0 values in 0.000041 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #62 [got 0 values in 0.000546 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #61 [got 0 values in 0.000042 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #60 [got 0 values in 0.000252 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #59 [got 0 values in 0.000038 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #58 [got 0 values in 0.000044 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #57 [got 0 values in 0.000344 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #56 [got 0 values in 0.000062 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #55 [got 0 values in 0.000027 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #54 [got 0 values in 0.000025 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #53 [got 0 values in 0.000043 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #52 [got 0 values in 0.000047 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #51 [got 0 values in 0.000146 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #50 [got 0 values in 0.000033 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #49 [got 0 values in 0.000028 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #48 [got 0 values in 0.000038 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #47 [got 0 values in 0.000139 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #46 [got 0 values in 0.000031 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #45 [got 0 values in 0.000036 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #44 [got 0 values in 0.000050 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #43 [got 0 values in 0.000036 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #42 [got 0 values in 0.000102 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #41 [got 0 values in 0.000075 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #40 [got 0 values in 0.000045 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #39 [got 0 values in 0.000028 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #38 [got 0 values in 0.000031 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #37 [got 0 values in 0.000025 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #36 [got 0 values in 0.000046 sec, getting values]","v":""},\n{"a":"zabbix_server: unreachable poller #35 [got 0 values in 0.000037 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #34 [got 0 values in 0.000033 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #33 [got 0 values in 0.000177 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #32 [got 0 values in 0.000057 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #31 [got 0 values in 0.000044 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #30 [got 0 values in 0.000040 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #29 [got 0 values in 0.000028 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #28 [got 0 values in 0.000591 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #27 [got 0 values in 0.000050 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #26 [got 0 values in 0.000352 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #25 [got 0 values in 0.000066 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #24 [got 0 values in 0.000034 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #23 [got 0 values in 0.000032 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #22 [got 0 values in 0.000038 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #21 [got 0 values in 0.000040 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #20 [got 0 values in 0.000039 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #19 [got 0 values in 0.000211 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #18 [got 0 values in 0.000329 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #17 [got 0 values in 0.000064 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #16 [got 0 values in 0.000054 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #15 [got 0 values in 0.000029 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #14 [got 0 values in 0.000026 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #13 [got 0 values in 0.000037 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #12 [got 0 values in 0.000054 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #11 [got 0 values in 0.000025 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #10 [got 0 values in 0.000036 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #9 [got 0 values in 0.000840 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #8 [got 0 values in 0.000330 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #7 [got 0 values in 0.000043 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #6 [got 0 values in 0.000031 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #5 [got 0 values in 0.000049 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #4 [got 0 values in 0.000296 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #3 [got 0 values in 0.000059 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #2 [got 0 values in 0.001042 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: unreachable poller #1 [got 0 values in 0.000046 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: poller #200 [got 0 values in 0.000026 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #199 [got 0 values in 0.000036 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #198 [got 0 values in 0.000027 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #197 [got 0 values in 0.000065 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #196 [got 0 values in 0.000045 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #195 [got 0 values in 0.000035 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #194 [got 0 values in 0.000036 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #193 [got 0 values in 0.000055 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #192 [got 0 values in 0.000048 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #191 [got 0 values in 0.000030 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #190 [got 0 values in 0.000087 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #189 [got 0 values in 0.000033 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #188 [got 2 values in 0.000744 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #187 [got 0 values in 0.000044 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #186 [got 0 values in 0.000040 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #185 [got 0 values in 0.000031 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #184 [got 0 values in 0.000040 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #183 [got 0 values in 0.000036 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #182 [got 0 values in 0.000042 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #181 [got 0 values in 0.000038 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #180 [got 0 values in 0.000316 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #179 [got 0 values in 0.000120 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #178 [got 0 values in 0.000062 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #177 [got 0 values in 0.000078 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #176 [got 0 values in 0.000145 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #175 [got 0 values in 0.000047 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #174 [got 0 values in 0.000093 sec, getting values]","v":""},\n{"a":"zabbix_server: poller #173 [got 0 values in 0.000029 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #172 [got 0 values in 0.000108 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #171 [got 0 values in 0.000039 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #170 [got 0 values in 0.000046 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #169 [got 0 values in 0.000035 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #168 [got 0 values in 0.000036 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #167 [got 0 values in 0.000191 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #166 [got 0 values in 0.000050 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #165 [got 0 values in 0.000495 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #164 [got 0 values in 0.000081 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #163 [got 0 values in 0.000041 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #162 [got 0 values in 0.000038 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #161 [got 0 values in 0.000140 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #160 [got 0 values in 0.000025 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #159 [got 0 values in 0.000040 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #158 [got 0 values in 0.000031 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #157 [got 0 values in 0.000031 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #156 [got 0 values in 0.000028 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #155 [got 0 values in 0.000052 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #154 [got 0 values in 0.000038 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #153 [got 0 values in 0.000043 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #152 [got 0 values in 0.000060 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #151 [got 0 values in 0.000033 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #150 [got 0 values in 0.000072 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #149 [got 0 values in 0.000029 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #148 [got 0 values in 0.000088 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #147 [got 0 values in 0.000036 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #146 [got 0 values in 0.000038 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #145 [got 0 values in 0.000094 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #144 [got 0 values in 0.000045 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #143 [got 0 values in 0.000047 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #142 [got 0 values in 0.000026 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #141 [got 0 values in 0.000035 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #140 [got 0 values in 0.000149 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #139 [got 0 values in 0.000311 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #138 [got 0 values in 0.000065 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #137 [got 0 values in 0.000028 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #136 [got 0 values in 0.000060 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #135 [got 0 values in 0.000034 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #134 [got 0 values in 0.000060 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #133 [got 0 values in 0.000060 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #132 [got 0 values in 0.000044 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #131 [got 0 values in 0.000051 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #130 [got 0 values in 0.000033 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #129 [got 0 values in 0.000081 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #128 [got 0 values in 0.000029 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #127 [got 0 values in 0.000046 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #126 [got 0 values in 0.000029 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #125 [got 0 values in 0.000641 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #124 [got 0 values in 0.000051 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #123 [got 0 values in 0.000027 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #122 [got 0 values in 0.000028 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #121 [got 0 values in 0.000031 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #120 [got 0 values in 0.000432 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #119 [got 0 values in 0.000153 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #118 [got 0 values in 0.000031 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #117 [got 0 values in 0.000105 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #116 [got 0 values in 0.000026 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #115 [got 0 values in 0.000064 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #114 [got 0 values in 0.000051 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #113 [got 0 values in 0.000252 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #112 [got 0 values in 0.000039 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #111 [got 0 values in 0.000038 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #110 [got 0 values in 0.000041 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #109 [got 0 values in 0.000077 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #108 [got 0 values in 0.000047 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #107 [got 0 values in 0.000053 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #106 [got 0 values in 0.000027 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #105 [got 0 values in 0.000038 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #104 [got 0 values in 0.000028 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #103 [got 0 values in 0.000067 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #102 [got 0 values in 0.000030 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #101 [got 0 values in 0.000044 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #100 [got 0 values in 0.000093 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #99 [got 0 values in 0.000083 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #98 [got 0 values in 0.000063 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #97 [got 0 values in 0.000043 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #96 [got 0 values in 0.000045 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #95 [got 0 values in 0.000034 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #94 [got 0 values in 0.000027 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #93 [got 0 values in 0.000046 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #92 [got 0 values in 0.000036 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #91 [got 0 values in 0.000124 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #90 [got 0 values in 0.000027 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #89 [got 0 values in 0.000126 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #88 [got 0 values in 0.000117 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #87 [got 0 values in 0.000619 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #86 [got 0 values in 0.000075 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #85 [got 0 values in 0.000125 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #84 [got 0 values in 0.000032 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #83 [got 0 values in 0.000143 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #82 [got 0 values in 0.000032 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #81 [got 0 values in 0.000039 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #80 [got 0 values in 0.000100 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #79 [got 0 values in 0.000149 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #78 [got 0 values in 0.000052 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #77 [got 0 values in 0.000054 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #76 [got 0 values in 0.000071 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #75 [got 0 values in 0.000042 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #74 [got 0 values in 0.000029 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #73 [got 0 values in 0.000048 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #72 [got 0 values in 0.000109 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #71 [got 0 values in 0.000054 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #70 [got 0 values in 0.000048 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #69 [got 0 values in 0.000032 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #68 [got 0 values in 0.000044 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #67 [got 0 values in 0.000033 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #66 [got 0 values in 0.000027 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #65 [got 0 values in 0.000040 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #64 [got 0 values in 0.000026 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #63 [got 0 values in 0.000035 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #62 [got 0 values in 0.000760 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #61 [got 0 values in 0.000037 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #60 [got 0 values in 0.000109 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #59 [got 0 values in 0.000026 sec, getting values]","v":""},\n{"a":"zabbix_server: poller #58 [got 0 values in 0.000038 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #57 [got 0 values in 0.000050 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #56 [got 0 values in 0.000101 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #55 [got 0 values in 0.000025 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #54 [got 0 values in 0.000026 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #53 [got 0 values in 0.000030 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #52 [got 0 values in 0.000034 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #51 [got 0 values in 0.000336 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #50 [got 0 values in 0.000071 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #49 [got 0 values in 0.000035 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #48 [got 0 values in 0.000046 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #47 [got 0 values in 0.000031 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #46 [got 0 values in 0.000072 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #45 [got 0 values in 0.000041 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #44 [got 0 values in 0.000024 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #43 [got 0 values in 0.000039 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #42 [got 0 values in 0.000100 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #41 [got 0 values in 0.000042 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #40 [got 0 values in 0.000043 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #39 [got 0 values in 0.000057 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #38 [got 0 values in 0.000028 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #37 [got 0 values in 0.000056 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #36 [got 0 values in 0.000033 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #35 [got 0 values in 0.000082 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #34 [got 0 values in 0.000025 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #33 [got 0 values in 0.000026 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #32 [got 0 values in 0.000139 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #31 [got 0 values in 0.000068 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #30 [got 0 values in 0.000072 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #29 [got 0 values in 0.000556 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #28 [got 0 values in 0.000072 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #27 [got 0 values in 0.000039 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #26 [got 0 values in 0.000057 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #25 [got 0 values in 0.000059 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #24 [got 0 values in 0.000036 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #23 [got 0 values in 0.000137 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #22 [got 0 values in 0.000070 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #21 [got 0 values in 0.000038 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #20 [got 0 values in 0.000524 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #19 [got 0 values in 0.000036 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #18 [got 0 values in 0.000422 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #17 [got 0 values in 0.000120 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #16 [got 0 values in 0.000032 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #15 [got 0 values in 0.000077 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #14 [got 0 values in 0.000026 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #13 [got 0 values in 0.000068 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #12 [got 0 values in 0.000040 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #11 [got 0 values in 0.000156 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #10 [got 0 values in 0.000039 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #9 [got 0 values in 0.000038 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #8 [got 0 values in 0.000035 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #7 [got 0 values in 0.000098 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #6 [got 0 values in 0.000806 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #5 [got 0 values in 0.000040 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #4 [got 0 values in 0.000041 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #3 [got 0 values in 0.000039 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #2 [got 0 values in 0.000026 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: poller #1 [got 0 values in 0.000052 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: task manager [processed 0 task(s) in 0.000690 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: vmware collector #5 [updated 0, removed 0 VMware services, idle 5.000000 sec during 5.001484 sec]","v":""},\n{"a":"zabbix_server: vmware collector #4 [updated 0, removed 0 VMware services, idle 5.000000 sec during 5.000880 sec]","v":""},\n{"a":"zabbix_server: vmware collector #3 [updated 0, removed 0 VMware services, idle 5.000000 sec during 5.001089 sec]","v":""},\n{"a":"zabbix_server: vmware collector #2 [updated 0, removed 0 VMware services, idle 5.000000 sec during 5.001130 sec]","v":""},\n{"a":"zabbix_server: vmware collector #1 [updated 0, removed 0 VMware services, idle 5.000000 sec during 5.001120 sec]","v":""},\n{"a":"zabbix_server: self-monitoring [processed data in 0.000120 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: proxy poller #1 [exchanged data with 0 proxies in 0.000040 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: escalator #2 [processed 0 escalations in 0.003095 sec, idle 3 sec]","v":""},\n{"a":"zabbix_server: escalator #1 [processed 0 escalations in 0.002776 sec, idle 3 sec]","v":""},\n{"a":"zabbix_server: history syncer #4 [processed 1 values, 0 triggers in 0.009912 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: history syncer #3 [processed 0 values, 0 triggers in 0.000060 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: history syncer #2 [processed 0 values, 0 triggers in 0.000063 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: history syncer #1 [processed 0 values, 0 triggers in 0.000108 sec, idle 1 sec]","v":""},\n{"a":"zabbix_server: discoverer #15 [processed 0 rules in 0.001609 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #14 [processed 0 rules in 0.001854 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #13 [processed 0 rules in 0.001341 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #12 [processed 0 rules in 0.001404 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #11 [processed 0 rules in 0.001326 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #10 [processed 0 rules in 0.001348 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #9 [processed 0 rules in 0.001374 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #8 [processed 0 rules in 0.001535 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #7 [processed 0 rules in 0.000943 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #6 [processed 0 rules in 0.001275 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #5 [processed 0 rules in 0.001519 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #4 [processed 0 rules in 0.001359 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #3 [processed 0 rules in 0.001293 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #2 [processed 0 rules in 0.001427 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: discoverer #1 [processed 0 rules in 0.001403 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: http poller #5 [got 7 values in 0.849296 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: http poller #4 [got 0 values in 0.002059 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: http poller #3 [got 0 values in 0.002502 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: http poller #2 [got 4 values in 0.275268 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: http poller #1 [got 9 values in 1.334990 sec, idle 5 sec]","v":""},\n{"a":"zabbix_server: timer #2 [suppressed 0 events in 0.002729 sec, idle 42 sec]","v":""},\n{"a":"zabbix_server: timer #1 [updated 0 hosts, suppressed 0 events in 0.002030 sec, idle 59 sec]","v":""},\n{"a":"triggers, 0 events, 0 sessions, 0 alarms, 0 audit items, 0 records in 42.349048 sec, idle for 1 hour(s)]","v":""},\n{"a":"zabbix_server: lld worker #2 [processed 1 LLD rules, idle 119.903380 sec during 119.921206 sec]","v":""},\n{"a":"zabbix_server: lld worker #1 [processed 1 LLD rules, idle 119.973671 sec during 119.982244 sec]","v":""},\n{"a":"zabbix_server: lld manager #1 [processed 0 LLD rules, idle 5.020504sec during 5.020646 sec]","v":""},\n{"a":"zabbix_server: preprocessing worker #30 started","v":""},\n{"a":"zabbix_server: preprocessing worker #29 started","v":""},\n{"a":"zabbix_server: preprocessing worker #28 started","v":""},\n{"a":"zabbix_server: preprocessing worker #27 started","v":""},\n{"a":"zabbix_server: preprocessing worker #26 started","v":""},\n{"a":"zabbix_server: preprocessing worker #25 started","v":""},\n{"a":"zabbix_server: preprocessing worker #24 started","v":""},\n{"a":"zabbix_server: preprocessing worker #23 started","v":""},\n{"a":"zabbix_server: preprocessing worker #22 started","v":""},\n{"a":"zabbix_server: preprocessing worker #21 started","v":""},\n{"a":"zabbix_server: preprocessing worker #20 started","v":""},\n{"a":"zabbix_server: preprocessing worker #19 started","v":""},\n{"a":"zabbix_server: preprocessing worker #18 started","v":""},\n{"a":"zabbix_server: preprocessing worker #17 started","v":""},\n{"a":"zabbix_server: preprocessing worker #16 started","v":""},\n{"a":"zabbix_server: preprocessing worker #15 started","v":""},\n{"a":"zabbix_server: preprocessing worker #14 started","v":""},\n{"a":"zabbix_server: preprocessing worker #13 started","v":""},\n{"a":"zabbix_server: preprocessing worker #12 started","v":""},\n{"a":"zabbix_server: preprocessing worker #11 started","v":""},\n{"a":"zabbix_server: preprocessing worker #10 started","v":""},\n{"a":"zabbix_server: preprocessing worker #9 started","v":""},\n{"a":"zabbix_server: preprocessing worker #8 started","v":""},\n{"a":"zabbix_server: preprocessing worker #7 started","v":""},\n{"a":"zabbix_server: preprocessing worker #6 started","v":""},\n{"a":"zabbix_server: preprocessing worker #5 started","v":""},\n{"a":"zabbix_server: preprocessing worker #4 started","v":""},\n{"a":"zabbix_server: preprocessing worker #3 started","v":""},\n{"a":"zabbix_server: preprocessing worker #2 started","v":""},\n{"a":"zabbix_server: preprocessing worker #1 started","v":""},\n{"a":"zabbix_server: preprocessing manager #1 [queued 0, processed 48 values, idle 5.018319 sec during 5.020413 sec]","v":""},\n{"a":"zabbix_server: alerter #5 started","v":""},\n{"a":"zabbix_server: alerter #4 started","v":""},\n{"a":"zabbix_server: alerter #3 started","v":""},\n{"a":"zabbix_server: alerter #2 started","v":""},\n{"a":"zabbix_server: alerter #1 started","v":""},\n{"a":"zabbix_server: alert manager #1 [sent 0, failed 0 alerts, idle 5.011542 sec during 5.011784 sec]","v":""},\n{"a":"zabbix_server: configuration syncer [synced configuration in 0.305882 sec, idle 60 sec]","v":""},\n{"a":"zabbix_server: service manager #1 [processed 0 events, updated 0 event tags, deleted 0 problems, synced 0 service updates, idle 5.018497 sec during 5.023881 sec]","v":""},\n{"a":"zabbix_server: ha manager","v":""},\n{"a":"zabbix_server","v":""},\n{"a":"apache2","v":""},\n{"a":"dio/dm-0","v":""},\n{"a":"elastic-agent","v":""},\n{"a":"apache2","v":""},\n{"a":"apache2","v":""},\n{"a":"apache2","v":""},\n{"a":"apache2","v":""},\n{"a":"zabbix_agentd: active checks #1 [idle 1 sec]","v":""},\n{"a":"zabbix_agentd: listener #3 [waiting for connection]","v":""},\n{"a":"zabbix_agentd: listener #2 [waiting for connection]","v":""},\n{"a":"zabbix_agentd: listener #1 [waiting for connection]","v":""},\n{"a":"zabbix_agentd: collector [idle 1 sec]","v":""},\n{"a":"zabbix_agentd","v":""},\n{"a":"apache2","v":""},\n{"a":"mysqld","v":""},\n{"a":"ModemManager","v":""},\n{"a":"sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups","v":""},\n{"a":"python3","v":""},\n{"a":"login","v":""},\n{"a":"snmpd","v":""},\n{"a":"atd","v":""},\n{"a":"udisksd","v":""},\n{"a":"systemd-logind","v":""},\n{"a":"snapd","v":""},\n{"a":"rsyslogd","v":""},\n{"a":"polkitd","v":""},\n{"a":"python3","v":""},\n{"a":"irqbalance","v":""},\n{"a":"elastic-agent","v":""},\n{"a":"dbus-daemon","v":""},\n{"a":"cron","v":""},\n{"a":"accounts-daemon","v":""},\n{"a":"vmtoolsd","v":""},\n{"a":"VGAuthService","v":""},\n{"a":"systemd-timesyncd","v":""},\n{"a":"loop5","v":""},\n{"a":"loop4","v":""},\n{"a":"loop3","v":""},\n{"a":"loop2","v":""},\n{"a":"loop1","v":""},\n{"a":"loop0","v":""},\n{"a":"ext4-rsv-conver","v":""},\n{"a":"jbd2/dm-2-8","v":""},\n{"a":"ext4-rsv-conver","v":""},\n{"a":"jbd2/dm-4-8","v":""},\n{"a":"ext4-rsv-conver","v":""},\n{"a":"jbd2/dm-5-8","v":""},\n{"a":"ext4-rsv-conver","v":""},\n{"a":"jbd2/dm-0-8","v":""},\n{"a":"ext4-rsv-conver","v":""},\n{"a":"jbd2/sda2-8","v":""},\n{"a":"multipathd","v":""},\n{"a":"kmpath_handlerd","v":""},\n{"a":"kmpathd","v":""},\n{"a":"kmpath_rdacd","v":""},\n{"a":"kaluad","v":""},\n{"a":"systemd-udevd","v":""},\n{"a":"kworker/6:1H-kblockd","v":""},\n{"a":"kworker/5:1H-kblockd","v":""},\n{"a":"kworker/4:1H-kblockd","v":""},\n{"a":"ext4-rsv-conver","v":""},\n{"a":"jbd2/dm-3-8","v":""},\n{"a":"raid5wq","v":""},\n{"a":"kworker/0:1H-kblockd","v":""},\n{"a":"kdmflush","v":""},\n{"a":"kdmflush","v":""},\n{"a":"kdmflush","v":""},\n{"a":"kdmflush","v":""},\n{"a":"kdmflush","v":""},\n{"a":"kworker/2:1H-kblockd","v":""},\n{"a":"kdmflush","v":""},\n{"a":"kworker/3:1H-kblockd","v":""},\n{"a":"kworker/1:1H-kblockd","v":""},\n{"a":"kworker/7:1H-kblockd","v":""},\n{"a":"scsi_tmf_32","v":""},\n{"a":"scsi_eh_32","v":""},\n{"a":"ttm_swap","v":""},\n{"a":"irq/16-vmwgfx","v":""},\n{"a":"scsi_tmf_31","v":""},\n{"a":"scsi_eh_31","v":""},\n{"a":"scsi_tmf_30","v":""},\n{"a":"scsi_eh_30","v":""},\n{"a":"scsi_tmf_29","v":""},\n{"a":"scsi_eh_29","v":""},\n{"a":"scsi_tmf_28","v":""},\n{"a":"scsi_eh_28","v":""},\n{"a":"scsi_tmf_27","v":""},\n{"a":"scsi_eh_27","v":""},\n{"a":"scsi_tmf_26","v":""},\n{"a":"scsi_eh_26","v":""},\n{"a":"scsi_tmf_25","v":""},\n{"a":"scsi_eh_25","v":""},\n{"a":"scsi_tmf_24","v":""},\n{"a":"scsi_eh_24","v":""},\n{"a":"scsi_tmf_23","v":""},\n{"a":"scsi_eh_23","v":""},\n{"a":"scsi_tmf_22","v":""},\n{"a":"scsi_eh_22","v":""},\n{"a":"scsi_tmf_21","v":""},\n{"a":"scsi_eh_21","v":""},\n{"a":"scsi_tmf_20","v":""},\n{"a":"scsi_eh_20","v":""},\n{"a":"scsi_tmf_19","v":""},\n{"a":"scsi_eh_19","v":""},\n{"a":"scsi_tmf_18","v":""},\n{"a":"scsi_eh_18","v":""},\n{"a":"scsi_tmf_17","v":""},\n{"a":"scsi_eh_17","v":""},\n{"a":"scsi_tmf_16","v":""},\n{"a":"scsi_eh_16","v":""},\n{"a":"mpt/0","v":""},\n{"a":"scsi_tmf_15","v":""},\n{"a":"scsi_eh_15","v":""},\n{"a":"scsi_tmf_14","v":""},\n{"a":"scsi_eh_14","v":""},\n{"a":"scsi_tmf_13","v":""},\n{"a":"scsi_eh_13","v":""},\n{"a":"scsi_tmf_12","v":""},\n{"a":"scsi_eh_12","v":""},\n{"a":"mpt_poll_0","v":""},\n{"a":"scsi_tmf_11","v":""},\n{"a":"scsi_eh_11","v":""},\n{"a":"cryptd","v":""},\n{"a":"scsi_tmf_10","v":""},\n{"a":"scsi_eh_10","v":""},\n{"a":"scsi_tmf_9","v":""},\n{"a":"scsi_eh_9","v":""},\n{"a":"scsi_tmf_8","v":""},\n{"a":"scsi_eh_8","v":""},\n{"a":"scsi_tmf_7","v":""},\n{"a":"scsi_eh_7","v":""},\n{"a":"scsi_tmf_6","v":""},\n{"a":"scsi_eh_6","v":""},\n{"a":"scsi_tmf_5","v":""},\n{"a":"scsi_eh_5","v":""},\n{"a":"scsi_tmf_4","v":""},\n{"a":"scsi_eh_4","v":""},\n{"a":"scsi_tmf_3","v":""},\n{"a":"scsi_eh_3","v":""},\n{"a":"scsi_tmf_2","v":""},\n{"a":"scsi_eh_2","v":""},\n{"a":"charger_manager","v":""},\n{"a":"kworker/u17:0","v":""},\n{"a":"kstrp","v":""},\n{"a":"ipv6_addrconf","v":""},\n{"a":"vfio-irqfd-clea","v":""},\n{"a":"scsi_tmf_1","v":""},\n{"a":"scsi_eh_1","v":""},\n{"a":"scsi_tmf_0","v":""},\n{"a":"scsi_eh_0","v":""},\n{"a":"acpi_thermal_pm","v":""},\n{"a":"irq/55-pciehp","v":""},\n{"a":"irq/54-pciehp","v":""},\n{"a":"irq/53-pciehp","v":""},\n{"a":"irq/52-pciehp","v":""},\n{"a":"irq/51-pciehp","v":""},\n{"a":"irq/50-pciehp","v":""},\n{"a":"irq/49-pciehp","v":""},\n{"a":"irq/48-pciehp","v":""},\n{"a":"irq/47-pciehp","v":""},\n{"a":"irq/46-pciehp","v":""},\n{"a":"irq/45-pciehp","v":""},\n{"a":"irq/44-pciehp","v":""},\n{"a":"irq/43-pciehp","v":""},\n{"a":"irq/42-pciehp","v":""},\n{"a":"irq/41-pciehp","v":""},\n{"a":"irq/40-pciehp","v":""},\n{"a":"irq/39-pciehp","v":""},\n{"a":"irq/38-pciehp","v":""},\n{"a":"irq/37-pciehp","v":""},\n{"a":"irq/36-pciehp","v":""},\n{"a":"irq/35-pciehp","v":""},\n{"a":"irq/34-pciehp","v":""},\n{"a":"irq/33-pciehp","v":""},\n{"a":"irq/32-pciehp","v":""},\n{"a":"irq/31-pciehp","v":""},\n{"a":"irq/30-pciehp","v":""},\n{"a":"irq/29-pciehp","v":""},\n{"a":"irq/28-pciehp","v":""},\n{"a":"irq/27-pciehp","v":""},\n{"a":"irq/26-pciehp","v":""},\n{"a":"irq/25-pciehp","v":""},\n{"a":"irq/24-pciehp","v":""},\n{"a":"kthrotld","v":""},\n{"a":"ecryptfs-kthrea","v":""},\n{"a":"kswapd0","v":""},\n{"a":"watchdogd","v":""},\n{"a":"devfreq_wq","v":""},\n{"a":"edac-poller","v":""},\n{"a":"md","v":""},\n{"a":"ata_sff","v":""},\n{"a":"tpm_dev_wq","v":""},\n{"a":"blkcg_punt_bio","v":""},\n{"a":"kblockd","v":""},\n{"a":"kintegrityd","v":""},\n{"a":"khugepaged","v":""},\n{"a":"ksmd","v":""},\n{"a":"kcompactd0","v":""},\n{"a":"writeback","v":""},\n{"a":"oom_reaper","v":""},\n{"a":"khungtaskd","v":""},\n{"a":"kauditd","v":""},\n{"a":"rcu_tasks_kthre","v":""},\n{"a":"netns","v":""},\n{"a":"kdevtmpfs","v":""},\n{"a":"kworker/7:0H-kblockd","v":""},\n{"a":"ksoftirqd/7","v":""},\n{"a":"migration/7","v":""},\n{"a":"idle_inject/7","v":""},\n{"a":"cpuhp/7","v":""},\n{"a":"kworker/6:0H-kblockd","v":""},\n{"a":"ksoftirqd/6","v":""},\n{"a":"migration/6","v":""},\n{"a":"idle_inject/6","v":""},\n{"a":"cpuhp/6","v":""},\n{"a":"kworker/5:0H-kblockd","v":""},\n{"a":"ksoftirqd/5","v":""},\n{"a":"migration/5","v":""},\n{"a":"idle_inject/5","v":""},\n{"a":"cpuhp/5","v":""},\n{"a":"kworker/4:0H-kblockd","v":""},\n{"a":"ksoftirqd/4","v":""},\n{"a":"migration/4","v":""},\n{"a":"idle_inject/4","v":""},\n{"a":"cpuhp/4","v":""},\n{"a":"kworker/3:0H-kblockd","v":""},\n{"a":"ksoftirqd/3","v":""},\n{"a":"migration/3","v":""},\n{"a":"idle_inject/3","v":""},\n{"a":"cpuhp/3","v":""},\n{"a":"kworker/2:0H-kblockd","v":""},\n{"a":"ksoftirqd/2","v":""},\n{"a":"migration/2","v":""},\n{"a":"idle_inject/2","v":""},\n{"a":"cpuhp/2","v":""},\n{"a":"kworker/1:0H-kblockd","v":""},\n{"a":"ksoftirqd/1","v":""},\n{"a":"migration/1","v":""},\n{"a":"idle_inject/1","v":""},\n{"a":"cpuhp/1","v":""},\n{"a":"cpuhp/0","v":""},\n{"a":"idle_inject/0","v":""},\n{"a":"migration/0","v":""},\n{"a":"rcu_sched","v":""},\n{"a":"ksoftirqd/0","v":""},\n{"a":"mm_percpu_wq","v":""},\n{"a":"kworker/0:0H-kblockd","v":""},\n{"a":"rcu_par_gp","v":""},\n{"a":"rcu_gp","v":""},\n{"a":"kthreadd","v":""},\n{"a":"systemd","v":""}]}'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'sched.swap.derivedName',
+      value = '/vmfs/volumes/5db3e50a-1f3e3640-76a0-d4ae528ebcfe/SRV-ZABBIX/SRV-ZABBIX-c40100bc.vswp'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'scsi0:1.redo',
+      value = ''
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'scsi0:0.redo',
+      value = ''
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmware.tools.internalversion',
+      value = '11360'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'vmware.tools.requiredversion',
+      value = '10272'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'migrate.hostLogState',
+      value = 'success'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'migrate.migrationId',
+      value = '2358880874401'
+   },
+   (vim.option.OptionValue) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      key = 'migrate.hostLog',
+      value = 'SRV-ZABBIX-4d5fc326.hlog'
+   }
+], 'cpuFeatureMask': (vim.host.CpuIdInfo) [], 'datastoreUrl': (vim.vm.ConfigInfo.DatastoreUrlPair) [
+   (vim.vm.ConfigInfo.DatastoreUrlPair) {
+      dynamicType = <unset>,
+      dynamicProperty = (vmodl.DynamicProperty) [],
+      name = 'NSOL-VM-Replica02',
+      url = '/vmfs/volumes/5db3e50a-1f3e3640-76a0-d4ae528ebcfe'
+   }
+], 'swapPlacement': 'inherit', 'bootOptions': (vim.vm.BootOptions) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   bootDelay = 0,
+   enterBIOSSetup = false,
+   efiSecureBootEnabled = false,
+   bootRetryEnabled = false,
+   bootRetryDelay = 10000,
+   bootOrder = (vim.vm.BootOptions.BootableDevice) [],
+   networkBootProtocol = 'ipv4'
+}, 'ftInfo': None, 'repConfig': None, 'vAppConfig': None, 'vAssertsEnabled': False, 'changeTrackingEnabled': False, 'firmware': 'bios', 'maxMksConnections': 40, 'guestAutoLockEnabled': False, 'managedBy': None, 'memoryReservationLockedToMax': False, 'initialOverhead': (vim.vm.ConfigInfo.OverheadInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   initialMemoryReservation = 187961344,
+   initialSwapReservation = 216162304
+}, 'nestedHVEnabled': False, 'vPMCEnabled': False, 'scheduledHardwareUpgradeInfo': (vim.vm.ScheduledHardwareUpgradeInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   upgradePolicy = 'never',
+   versionKey = <unset>,
+   scheduledHardwareUpgradeStatus = 'none',
+   fault = <unset>
+}, 'forkConfigInfo': (vim.vm.ForkConfigInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   parentEnabled = false,
+   childForkGroupId = <unset>,
+   parentForkGroupId = <unset>,
+   childType = <unset>
+}, 'vFlashCacheReservation': 0, 'vmxConfigChecksum': b'\x97\xa0f?\xfc\x16\xfcy\xf0\x8a\x9fu\xa8\xa4\x8df1\xb9[\xeb', 'messageBusTunnelEnabled': False, 'vmStorageObjectId': None, 'swapStorageObjectId': None, 'keyId': None, 'guestIntegrityInfo': (vim.vm.GuestIntegrityInfo) {
+   dynamicType = <unset>,
+   dynamicProperty = (vmodl.DynamicProperty) [],
+   enabled = false
+}, 'migrateEncryption': 'opportunistic', 'sgxInfo': None, 'contentLibItemInfo': None, 'ftEncryptionMode': None, 'guestMonitoringModeInfo': None, 'sevEnabled': None, 'numaInfo': None, 'pmemFailoverEnabled': None, 'vmxStatsCollectionEnabled': None, 'vmOpNotificationToAppEnabled': None, 'vmOpNotificationTimeout': None, 'deviceSwap': None, 'pmem': None, 'deviceGroups': None}
