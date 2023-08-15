@@ -40,3 +40,5 @@ opencv-python-headless==4.5.5.62
 # pygame==2.1.2
 opencv-python
 scipy
+pyttsx3
+pydub

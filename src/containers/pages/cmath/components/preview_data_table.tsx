@@ -112,27 +112,62 @@ export const PreviewDataTable = ({test, selectedRow}: Props) => {
 
           {(histogram.data_array.length > 0 && histogram.median_result_matrix.length > 0) ? (
             <div className='w-full md:w-1/2 pt-5 flex flex-wrap'>
-              <div className="w-full md:w-1/2 p-4">
-                <h3 className="text-xl font-bold mb-4">Original Colors</h3>
-                <MatrixDisplay matrix={histogram.data_array} /> 
-              </div>
+              <h1>MEDIANA</h1>
+              <div className='w-full flex flex-wrap'>
+                <div className="w-full md:w-1/2 p-4">
+                  <h3 className="text-xl font-bold mb-4">Original Colors</h3>
+                  <MatrixDisplay matrix={histogram.data_array} /> 
+                </div>
 
-              <div className="w-full md:w-1/2 p-4">
-                <h3 className="text-xl font-bold mb-4">Filtered</h3>
-                <MatrixDisplay matrix={histogram.median_result_matrix} />             </div>
+                <div className="w-full md:w-1/2 p-4">
+                  <h3 className="text-xl font-bold mb-4">Filtered</h3>
+                  <MatrixDisplay matrix={histogram.median_result_matrix} />             
+                </div>
+              </div>
+              
             </div>
           ): <></>}
 
           {(histogram.data_array.length > 0 && histogram.avarage_result_matrix.length > 0) ? (
+            
             <div className='w-full md:w-1/2 pt-5 flex flex-wrap'>
-              <div className="w-full md:w-1/2 p-4">
-                <h3 className="text-xl font-bold mb-4">Original Colors</h3>
-                <MatrixDisplay matrix={histogram.data_array} /> 
-              </div>
+              <h1>LA MEDIA</h1>
+              <div className='w-full flex flex-wrap'>
+                <div className="w-full md:w-1/2 p-4">
+                  <h3 className="text-xl font-bold mb-4">Original Colors</h3>
+                  <MatrixDisplay matrix={histogram.data_array} /> 
+                </div>
 
-              <div className="w-full md:w-1/2 p-4">
-                <h3 className="text-xl font-bold mb-4">Filtered</h3>
-                <MatrixDisplay matrix={histogram.avarage_result_matrix} />             </div>
+                <div className="w-full md:w-1/2 p-4">
+                  <h3 className="text-xl font-bold mb-4">Filtered</h3>
+                  <MatrixDisplay matrix={histogram.avarage_result_matrix} />             
+                </div>
+              </div>
+              
+            </div>
+          ): <></>}
+
+          {(histogram.data_array.length > 0 && histogram.laplacian_result_matrix.length > 0) ? (
+            
+            <div className='w-full md:w-1/2 pt-5 flex flex-wrap'>
+              <h1>LA LAPLACIAN</h1>
+              <div className='w-full flex flex-wrap'>
+                <div className="w-full md:w-1/2 p-4">
+                  <h3 className="text-xl font-bold mb-4">Original Colors</h3>
+                  <MatrixDisplay matrix={histogram.data_array} /> 
+                </div>
+
+                <div className="w-full md:w-1/2 p-4">
+                  <h3 className="text-xl font-bold mb-4">Filtered</h3>
+                  <MatrixDisplay matrix={histogram.laplacian_result_matrix} />             
+                </div>
+
+                <div className="w-full md:w-1/2 p-4">
+                  <h3 className="text-xl font-bold mb-4">Resized</h3>
+                  <MatrixDisplay matrix={histogram.resize_laplacian_result_matrix} />             
+                </div>
+              </div>
+              
             </div>
           ): <></>}
           

@@ -8,7 +8,7 @@ class CmathRepository(CmathRepositoryInterface):
         super().__init__()
 
     def test_cmath(self, cmath_model: CmathModel):
-        for index, histogram in enumerate(cmath_model.list):
+        for index, histogram in enumerate(cmath_model.list, start=0):
 
             print("--------------")
             print(f"test {index + 1}")
@@ -48,9 +48,11 @@ class CmathRepository(CmathRepositoryInterface):
                 )
 
             if len(histogram.data_array) > 0 and 'set_average_filter_from_mask_matrix' in histogram.tasks:
-                histogram.set_average_filter_from_mask_matrix(
-                    data_matrix=histogram.data_array
-                )
+                histogram.set_average_filter_from_mask_matrix()
+
+
+            if len(histogram.data_array) > 0 and 'set_laplacian_filter_from_mask_matrix' in histogram.tasks:
+                histogram.set_laplacian_filter_from_mask_matrix()
 
         return cmath_model
 
@@ -90,31 +92,37 @@ class CmathRepository(CmathRepositoryInterface):
                 calculus_helper=CalculusHelper(x1=3, y1=1, x2=7, y2=7)
             ),
             Histogram(
-                tasks=['set_median_filter_from_mask_matrix'],
-                id=3,
                 mask_matrix=[
-                    [1, 1, 1],
-                    [1, 1, 1],
-                    [1, 1, 1]
+                    [1, 2, 1],
+                    [2, 4, 2],
+                    [1, 2, 1]
                 ],
-                filter=1/9,
+                filter=1/16,
+                tasks=['set_median_filter_from_mask_matrix', 'set_average_filter_from_mask_matrix'],
+                id=3,
                 data_array=[
-                    [3, 3, 3, 4, 4],
-                    [3, 7, 3, 4, 0],
-                    [4, 4, 4, 5, 5],
-                    [3, 3, 3, 4, 4],
-                    [3, 7, 3, 4, 0]
+                    [0,	4,	3,	3,	3],
+                    [4,	4,	3,	7,	3],
+                    [4,	4,	3,	3,	3],
+                    [0,	4,	3,	3,	3],
+                    [4,	4,	3,	7,	3]
+
                 ]
             ),
             Histogram(
-                tasks=['set_average_filter_from_mask_matrix'],
-                id=3,
+                mask_matrix=[
+                    [0,1,0],
+                    [1,-4,1],
+                    [0,1,0]
+                ],
+                filter=1/16,
+                tasks=['set_laplacian_filter_from_mask_matrix'],
+                id=4,
                 data_array=[
-                    [3, 3, 3, 4, 4],
-                    [3, 7, 3, 4, 0],
-                    [4, 4, 4, 5, 5],
-                    [3, 3, 3, 4, 4],
-                    [3, 7, 3, 4, 0]
+                    [3,0,5,0],
+                    [3,0,1,0],
+                    [4,0,0,0],
+                    [7,0,7,0]
                 ]
             )
         ]

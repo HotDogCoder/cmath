@@ -32,6 +32,8 @@ export interface Histogram {
     mask_matrix: number[][];
     median_result_matrix: number[][];
     avarage_result_matrix: number[][];
+    laplacian_result_matrix: number[][];
+    resize_laplacian_result_matrix: number[][];
 }
 
 export interface Test {

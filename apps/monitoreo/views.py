@@ -1,31 +1,20 @@
 import json
 import re
-from time import sleep
 from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.parsers import MultiPartParser, FormParser
+from apps.monitoreo.domain.models import speak_model
 from apps.monitoreo.domain.models.cmath_model import CmathModel
 from apps.monitoreo.domain.models.frame_model import FrameModel
 from apps.monitoreo.domain.models.report_type_model import ReportTypeModel
 from apps.monitoreo.domain.models.screenshot import Screenshot
-from apps.monitoreo.models import VmwareMachine
+from apps.monitoreo.domain.models.speak_model import SpeakModel
+from apps.monitoreo.domain.models.speech_model import SpeechModel
 from apps.monitoreo.presentation.controllers.cmath_controller import CmathController
 from apps.monitoreo.presentation.controllers.frame_controller import FrameController
 from apps.monitoreo.presentation.controllers.report_type_controller import ReportTypeController
 
 from apps.monitoreo.presentation.controllers.screenshot_controller import ScreenshotController
-
-from django.shortcuts import get_object_or_404
-from django.core.exceptions import ValidationError
-from django.http import HttpResponseBadRequest, JsonResponse, HttpResponse
-# Create your views here.
-import ssl
-from pyVim.connect import SmartConnect, Disconnect
-from pyVmomi import vim, vmodl
-import paramiko
-
-from apps.monitoreo.serializers import VmwareMachineSerializer
+from django.http import HttpResponse
+from apps.monitoreo.presentation.controllers.speech_controller import SpeechController
 
 class StartMonitoreo(APIView):
     def post(self, request, format=None):
@@ -116,5 +105,21 @@ class CmathView(APIView):
         print('------------- termino -----------------')
 
         json_data = json.dumps(cmath_model.to_dict())
+        
+        return HttpResponse(json_data, content_type='application/json')
+    
+class SpeechView(APIView):
+    def post(self, request, format=None):
+        data = json.loads(request.body)  # Parse the JSON body
+        speech_model = SpeechModel()
+
+        speech_model.input = data.get('input', '')
+
+        SC = SpeechController()
+        SC = SC.run_speech(speech_model=speech_model)
+
+        print('------------- termino -----------------')
+
+        json_data = json.dumps(vars(SC))
         
         return HttpResponse(json_data, content_type='application/json')

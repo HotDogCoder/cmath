@@ -8,9 +8,6 @@ class CmathService(CmathServiceInterface):
         self.cmath_repository = CmathRepository()
 
     def test_cmath(self, cmath_model: CmathModel):
-
-        
-
         return self.cmath_repository.test_cmath(cmath_model)
 
     def set_test_list(self, cmath_model: CmathModel):
