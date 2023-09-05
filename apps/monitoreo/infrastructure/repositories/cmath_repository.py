@@ -57,37 +57,35 @@ class CmathRepository(CmathRepositoryInterface):
         return cmath_model
 
     def set_test_list(self, cmath_model: CmathModel):
-        return cmath_model
-    
-    def set_test_list(self, cmath_model: CmathModel):
         cmath_model.list = [
-            Histogram(
-                tasks=['equalize', 'expand', 'set_filter_from_mask_matrix'],
-                id=1,
-                colors = [
-                    Color(id=1, intensity=0, expanded_value=0.0, occurrences=0),
-                    Color(id=2, intensity=1, expanded_value=0.0, occurrences=0),
-                    Color(id=3, intensity=2, expanded_value=0.0, occurrences=0),
-                    Color(id=4, intensity=3, expanded_value=0.0, occurrences=63),
-                    Color(id=5, intensity=4, expanded_value=0.0, occurrences=0),
-                    Color(id=6, intensity=5, expanded_value=0.0, occurrences=45),
-                    Color(id=7, intensity=6, expanded_value=0.0, occurrences=42),
-                    Color(id=8, intensity=7, expanded_value=0.0, occurrences=60),
-                ],
-                calculus_helper=CalculusHelper(x1=3, y1=1, x2=7, y2=7)
-            ),
+            
             Histogram(
                 tasks=['equalize', 'expand'],
                 id=2,
                 colors = [
                     Color(id=1, intensity=0, expanded_value=0.0, occurrences=0),
-                    Color(id=2, intensity=1, expanded_value=0.0, occurrences=0),
-                    Color(id=3, intensity=2, expanded_value=0.0, occurrences=0),
-                    Color(id=4, intensity=3, expanded_value=0.0, occurrences=10),
-                    Color(id=5, intensity=4, expanded_value=0.0, occurrences=40),
-                    Color(id=6, intensity=5, expanded_value=0.0, occurrences=58),
+                    Color(id=2, intensity=1, expanded_value=0.0, occurrences=25),
+                    Color(id=3, intensity=2, expanded_value=0.0, occurrences=24),
+                    Color(id=4, intensity=3, expanded_value=0.0, occurrences=30),
+                    Color(id=5, intensity=4, expanded_value=0.0, occurrences=50),
+                    Color(id=6, intensity=5, expanded_value=0.0, occurrences=15),
                     Color(id=7, intensity=6, expanded_value=0.0, occurrences=0),
-                    Color(id=8, intensity=7, expanded_value=0.0, occurrences=116),
+                    Color(id=8, intensity=7, expanded_value=0.0, occurrences=0),
+                ],
+                calculus_helper=CalculusHelper(x1=3, y1=1, x2=7, y2=7)
+            ),
+            Histogram(
+                tasks=['equalize', 'expand'],
+                id=1,
+                colors = [
+                    Color(id=1, intensity=0, expanded_value=0.0, occurrences=12),
+                    Color(id=2, intensity=1, expanded_value=0.0, occurrences=6),
+                    Color(id=3, intensity=2, expanded_value=0.0, occurrences=36),
+                    Color(id=4, intensity=3, expanded_value=0.0, occurrences=12),
+                    Color(id=5, intensity=4, expanded_value=0.0, occurrences=48),
+                    Color(id=6, intensity=5, expanded_value=0.0, occurrences=24),
+                    Color(id=7, intensity=6, expanded_value=0.0, occurrences=6),
+                    Color(id=8, intensity=7, expanded_value=0.0, occurrences=6),
                 ],
                 calculus_helper=CalculusHelper(x1=3, y1=1, x2=7, y2=7)
             ),
@@ -101,29 +99,29 @@ class CmathRepository(CmathRepositoryInterface):
                 tasks=['set_median_filter_from_mask_matrix', 'set_average_filter_from_mask_matrix'],
                 id=3,
                 data_array=[
-                    [0,	4,	3,	3,	3],
-                    [4,	4,	3,	7,	3],
-                    [4,	4,	3,	3,	3],
-                    [0,	4,	3,	3,	3],
-                    [4,	4,	3,	7,	3]
+                    [5,	4,	6,	6,	1],
+                    [3,	3,	1,	0,	1],
+                    [6,	0,	0,	1,	1],
+                    [2,	2,	2,	3,	3],
+                    [4,	4,	0,	2,	1]
 
                 ]
-            ),
-            Histogram(
-                mask_matrix=[
-                    [0,1,0],
-                    [1,-4,1],
-                    [0,1,0]
-                ],
-                filter=1/16,
-                tasks=['set_laplacian_filter_from_mask_matrix'],
-                id=4,
-                data_array=[
-                    [3,0,5,0],
-                    [3,0,1,0],
-                    [4,0,0,0],
-                    [7,0,7,0]
-                ]
             )
+            # Histogram(
+            #     mask_matrix=[
+            #         [1,1,1],
+            #         [1,8,1],
+            #         [1,1,1]
+            #     ],
+            #     filter=1,
+            #     tasks=['set_laplacian_filter_from_mask_matrix'],
+            #     id=4,
+            #     data_array=[
+            #         [4,4,3,2],
+            #         [7,7,6,6],
+            #         [4,1,2,3],
+            #         [2,5,1,2]
+            #     ]
+            # )
         ]
 

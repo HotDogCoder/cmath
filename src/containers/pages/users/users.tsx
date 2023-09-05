@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <FullWidthLayout>
       <div className='flex flex-wrap px-3 py-3 mx-3 my-3 items-center bg-cyan-500'>
-        
+        Hola Frabricio
       </div>
     </FullWidthLayout>
   )

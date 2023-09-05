@@ -107,6 +107,11 @@ export const PreviewDataTable = ({test, selectedRow}: Props) => {
                 <h3 className="text-xl font-bold mb-4">Expanded Value Chart</h3>
                 <Bar options={options} data={createChartData(histogram.colors, 'occurrences', 'expanded_value')} />
               </div>
+
+              <div className="w-full md:w-1/2 p-4">
+                <h3 className="text-xl font-bold mb-4">Equalized Value Chart</h3>
+                <Bar options={options} data={createChartData(histogram.colors, 'occurrences', 'equalized_value')} />
+              </div>
           </div>
           ): <></>}
 

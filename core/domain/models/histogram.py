@@ -50,10 +50,10 @@ class Histogram:
             'median_result_matrix': self.median_result_matrix,
             'data_array': self.data_array,
             'avarage_result_matrix': self.avarage_result_matrix,
-            #'mask_middle': self.mask_middle,
-            #'mask_sub_array': self.mask_sub_array,
-            #'laplacian_result_matrix': self.laplacian_result_matrix,
-            #'resize_laplacian_result_matrix': self.resize_laplacian_result_matrix,
+            'mask_middle': self.mask_middle,
+            'mask_sub_array': self.mask_sub_array,
+            'laplacian_result_matrix': self.laplacian_result_matrix,
+            'resize_laplacian_result_matrix': self.resize_laplacian_result_matrix,
         }
 
     def store_test_colors(self):
@@ -156,7 +156,6 @@ class Histogram:
         self.mask_sub_array = sub_array
         # self.
         
-
     def set_average_filter_from_mask_matrix(self):
 
         arr_zeros = np.zeros((len(self.data_array), len(self.data_array[0]))).tolist()
@@ -183,23 +182,25 @@ class Histogram:
         new_max = np.max(new_array)
         new_min = np.min(new_array)
 
-        self.calculus_helper.x1 = new_min
-        self.calculus_helper.x2 = new_max
-        self.calculus_helper.y1 = old_min
-        self.calculus_helper.y2 = old_max
+        self.calculus_helper.x1 = int(new_min)
+        self.calculus_helper.x2 = int(new_max)
+        self.calculus_helper.y1 = int(old_min)
+        self.calculus_helper.y2 = int(old_max)
 
         m = self.calculus_helper.get_line_pendient()
+        b = self.get_line_order_expanded(m)
 
-        self.resize_laplacian_result_matrix = np.zeros((len(self.data_array), len(self.data_array[0]))).tolist()
+        resize_laplacian_result_matrix = np.zeros((len(self.data_array), len(self.data_array[0])))
 
         for row_index, row in enumerate(self.laplacian_result_matrix):
             for col_index, col in enumerate(row):
-                b = self.get_line_order_expanded(m)
+                
                 y = self.calculus_helper.get_y(m, b, col)
-                self.resize_laplacian_result_matrix[row_index][col_index] = round(y)
-        
-        self.resize_laplacian_result_matrix = np.round(self.resize_laplacian_result_matrix).astype(int)
+                resize_laplacian_result_matrix[row_index][col_index] = y
 
+        resize_laplacian_result_matrix = np.round(resize_laplacian_result_matrix).astype(int)
+
+        self.resize_laplacian_result_matrix = resize_laplacian_result_matrix.tolist()
 
     def set_laplacian_filter_from_mask_matrix(self):
 
